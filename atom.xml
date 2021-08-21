@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Bill Ma&#39;s Blog</title>
+  
+  <subtitle>Welcome!</subtitle>
+  <link href="https://billma.top/atom.xml" rel="self"/>
+  
+  <link href="https://billma.top/"/>
+  <updated>2021-08-09T20:37:24.000Z</updated>
+  <id>https://billma.top/</id>
+  
+  <author>
+    <name>Bill Ma</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的第一篇博客</title>
+    <link href="https://billma.top/2021/08/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://billma.top/2021/08/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</id>
+    <published>2021-08-09T20:23:52.000Z</published>
+    <updated>2021-08-09T20:37:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="首先-欢迎各位到访我的空间"><a href="#首先-欢迎各位到访我的空间" class="headerlink" title="首先,欢迎各位到访我的空间."></a>首先,欢迎各位到访我的空间.</h3><p>一直没时间打理这个博客,时至今日,终于在凌晨从百忙中完成了我的第一篇博客.<br>这就算我的第一篇博客吧.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;首先-欢迎各位到访我的空间&quot;&gt;&lt;a href=&quot;#首先-欢迎各位到访我的空间&quot; class=&quot;headerlink&quot; title=&quot;首先,欢迎各位到访我的空间.&quot;&gt;&lt;/a&gt;首先,欢迎各位到访我的空间.&lt;/h3&gt;&lt;p&gt;一直没时间打理这个博客,时至今日,终于在凌晨从百</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Calall产品发布页</title>
+    <link href="https://billma.top/2021/08/07/calall2/"/>
+    <id>https://billma.top/2021/08/07/calall2/</id>
+    <published>2021-08-07T08:33:29.000Z</published>
+    <updated>2021-08-09T21:13:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Calall是我独自设计的一款多功能计算器，可以精确计算指数函数，对数函数，7种三角函数，阶乘，以及发送邮件，定时关机/重启电脑，多种经典单机游戏等多功能。<br><a href="https://billma007.law.blog/calall-3-0-1developer-beta2%e7%8e%b0%e5%b7%b2%e4%b8%8a%e7%ba%bf%ef%bc%81/">点此前往Calall Developer Beta2发布页</a><br><a href="">点此前往Calall Developer Beta3发布页</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Calall是我独自设计的一款多功能计算器，可以精确计算指数函数，对数函数，7种三角函数，阶乘，以及发送邮件，定时关机/重启电脑，多种经典单机游戏等多功能。&lt;br&gt;&lt;a href=&quot;https://billma007.law.blog/calall-3-0-1develop</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>欢迎来到我的博客！</title>
+    <link href="https://billma.top/2021/08/02/hello-world/"/>
+    <id>https://billma.top/2021/08/02/hello-world/</id>
+    <published>2021-08-02T12:27:37.970Z</published>
+    <updated>2021-08-09T20:38:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<!-- Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues). -->]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;!-- Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you g</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>

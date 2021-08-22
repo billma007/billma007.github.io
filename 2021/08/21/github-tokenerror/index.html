@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang='cn'>
+
+<head>
+  <meta name="generator" content="Hexo 5.4.0">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  <title>世界最大同性交友网站七夕再搞事————remote  ：Support for password authentication was removed on August 13, 2021. - Bill Ma's Blog</title>
+
+  
+    <meta name="description" content="原创文章，转载注明出处！ 1.问题背景-background如果你在七夕（没错就是2021年8月14日）的这一天去访问了全球最大的同性交友网站，又刚好去更新提交代码，或者你创建了一个新的仓库送给自己，又刚好想把这个仓库送给github，你就刚好会遇到这个问题：remote: Support for password authentication was removed on August 13,">
+<meta property="og:type" content="article">
+<meta property="og:title" content="世界最大同性交友网站七夕再搞事————remote  ：Support for password authentication was removed on August 13, 2021.">
+<meta property="og:url" content="https://billma.top/2021/08/21/github-tokenerror/index.html">
+<meta property="og:site_name" content="Bill Ma&#39;s Blog">
+<meta property="og:description" content="原创文章，转载注明出处！ 1.问题背景-background如果你在七夕（没错就是2021年8月14日）的这一天去访问了全球最大的同性交友网站，又刚好去更新提交代码，或者你创建了一个新的仓库送给自己，又刚好想把这个仓库送给github，你就刚好会遇到这个问题：remote: Support for password authentication was removed on August 13,">
+<meta property="og:locale">
+<meta property="og:image" content="https://i.postimg.cc/zG2L02b1/Q-R9-VOLZG-DIN2-V0-HF-S8.png">
+<meta property="og:image" content="https://i.postimg.cc/VLBLHGhV/2.png!/scale/50">
+<meta property="og:image" content="https://i.postimg.cc/1tqy0J6M/31.png">
+<meta property="og:image" content="https://i.postimg.cc/RZgCv341/4.png">
+<meta property="og:image" content="https://i.postimg.cc/sD20t1HC/5.png">
+<meta property="og:image" content="https://i.postimg.cc/NQk5NFqj/6.png">
+<meta property="og:image" content="https://i.postimg.cc/XvhVyTZp/7.png">
+<meta property="article:published_time" content="2021-08-21T07:39:00.000Z">
+<meta property="article:modified_time" content="2021-08-22T01:16:46.000Z">
+<meta property="article:author" content="Bill Ma">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.postimg.cc/zG2L02b1/Q-R9-VOLZG-DIN2-V0-HF-S8.png">
+  
+  
+
+  <!-- feed -->
+  
+    <link rel="alternate" href="/atom.xml" title="Bill Ma's Blog" type="application/atom+xml">
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+
+  
+</head>
+
+<body>
+  
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
+
+
+<header class="header">
+
+<div class="logo-wrap"><a class="title" href="/"><div class="main">Bill Ma's Blog</div><div class="sub cap">Welcome!</div></a></div>
+<nav class="menu dis-select"></nav></header>
+
+<div class="widgets">
+
+<div class="widget-wrap single" id="toc"><div class="widget-header cap dis-select"><span class="name">TOC</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E9%97%AE%E9%A2%98%E8%83%8C%E6%99%AF-background"><span class="toc-text">1.问题背景-background</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%BB%80%E4%B9%88%E6%98%AFtoken%E4%BB%A4%E7%89%8C%EF%BC%9F"><span class="toc-text">2.什么是token令牌？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%A6%82%E4%BD%95%E7%94%B3%E8%AF%B7token%E4%BB%A4%E7%89%8C%EF%BC%9F"><span class="toc-text">3.如何申请token令牌？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%9C%E7%84%B6%EF%BC%8C%E5%85%A8%E7%90%83%E6%9C%80%E5%A4%A7%E7%9A%84%E5%90%8C%E6%80%A7%E4%BA%A4%E6%B5%81%E7%BD%91%E7%AB%99%E4%B8%8D%E6%98%AF%E5%90%B9%E7%9A%84%EF%BC%8C%E5%A4%A7%E4%B8%83%E5%A4%95%E8%8A%82%E9%9D%9E%E5%BE%97%E6%89%BE%E4%B8%AA%E4%BC%B4%E4%BE%A3%EF%BC%8C%E5%AE%83%E8%A6%81%E8%BF%87%E4%B8%83%E5%A4%95%E8%B0%81%E4%B9%9F%E6%8B%A6%E4%B8%8D%E4%BD%8F%E5%91%80%EF%BC%81"><span class="toc-text">果然，全球最大的同性交流网站不是吹的，大七夕节非得找个伴侣，它要过七夕谁也拦不住呀！</span></a></li></ol></div></div></div>
+
+
+</div>
+
+
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">Home</a><span class="sep"></span><a class="cap breadcrumb" href="/">Blog</a></div><div id="post-meta">Posted on&nbsp;<time datetime="2021-08-21T07:39:00.000Z">2021-08-21</time></div></div>
+
+<article class='content md post'>
+<h1 class="article-title"><span>世界最大同性交友网站七夕再搞事————remote  ：Support for password authentication was removed on August 13, 2021.</span></h1>
+<p><strong>原创文章，转载注明出处！</strong></p>
+<h3 id="1-问题背景-background"><a href="#1-问题背景-background" class="headerlink" title="1.问题背景-background"></a>1.问题背景-background</h3><p>如果你在七夕（没错就是2021年8月14日）<strong>的这一天去访问了全球最大的同性交友网站</strong>，<strong>又刚好去更新提交代码</strong>，<strong>或者你创建了一个新的仓库送给自己</strong>，<strong>又刚好想把这个仓库送给github</strong>，你就刚好会遇到这个问题：remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.<br>大概意思就是你原先的密码凭证从2021年8月13日开始就不能用了，必须使用个人访问令牌（personal access token），就是把你的密码替换成token！</p>
+<p><strong>滚！我tm懒得弄！</strong></p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://i.postimg.cc/zG2L02b1/Q-R9-VOLZG-DIN2-V0-HF-S8.png" alt="我是要通过GitHub上传网站源代码"> </p>
+<p> <strong>Github <a target="_blank" rel="noopener" href="https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/">官方解释</a></strong></p>
+<blockquote>
+<p>We described our motivation as we announced similar changes to authenticating with the API as follows:</p>
+</blockquote>
+<blockquote>
+<p>In recent years, GitHub customers have benefited from a number of security enhancements to GitHub.com, such as two-factor authentication, sign-in alerts, verified devices, preventing the use of compromised passwords, and WebAuthn support. These features make it more difficult for an attacker to take a password that’s been reused across multiple websites and use it to try to gain access to your GitHub account. Despite these improvements, for historical reasons customers without two-factor authentication enabled have been able to continue to authenticate Git and API operations using only their GitHub username and password.</p>
+</blockquote>
+<blockquote>
+<p>Beginning August 13, 2021, we will no longer accept account passwords when authenticating Git operations and will require the use of token-based authentication, such as a personal access token (for developers) or an OAuth or GitHub App installation token (for integrators) for all authenticated Git operations on GitHub.com. You may also continue using SSH keys where you prefer.</p>
+</blockquote>
+<blockquote>
+<p>Tokens offer a number of security benefits over password-based authentication:</p>
+</blockquote>
+<blockquote>
+<p>1.Unique – tokens are specific to GitHub and can be generated per use or per device</p>
+</blockquote>
+<blockquote>
+<p>2.Revocable – tokens can can be individually revoked at any time without needing to update unaffected credentials</p>
+</blockquote>
+<blockquote>
+<p>3.Limited – tokens can be narrowly scoped to allow only the access necessary for the use case</p>
+</blockquote>
+<blockquote>
+<p>4.Random – tokens are not subject to the types of dictionary or brute force attempts that simpler passwords that you need to remember or enter regularly might be</p>
+</blockquote>
+<p>大概意思就是：<strong>为了保证各位程序员的账户安全，我们已于2021年7月14日禁止大家在git及第三方应用上通过密码授权GitHub。以后将使用token令牌代替密码。</strong><br>（话说能活跃在全球最大同性交友网站的程序猿能有什么秘密值得如此加密。。。）</p>
+<h3 id="2-什么是token令牌？"><a href="#2-什么是token令牌？" class="headerlink" title="2.什么是token令牌？"></a>2.什么是token令牌？</h3><p>token令牌相当于在第三方接口代替你密码的一个玩意，有点像强密码。但是，token令牌并不是只能有唯一一个的。你可以拥有多个令牌，给不同的第三方接口不同的令牌，而每个令牌都被赋予了不同的权限和使用期限。也就是说，在令牌没赋予的权利将不会给第三方接口和git。当然，token令牌在你设定的期限之后，对应的第三方接口和git就需要你重新给一个令牌，否则也无法使用。令牌也可以随时更改权限和删除。</p>
+<h3 id="3-如何申请token令牌？"><a href="#3-如何申请token令牌？" class="headerlink" title="3.如何申请token令牌？"></a>3.如何申请token令牌？</h3><p>登陆你的GitHub（<strong>注意，在github.com登录你的账户时还是用你的密码，不是令牌</strong>) 点击头像。随后点击settings。</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://i.postimg.cc/VLBLHGhV/2.png!/scale/50"></p>
+<p>往下拉，你会在左侧看到一个Developer settings。点击它。</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://i.postimg.cc/1tqy0J6M/31.png"></p>
+<p>左侧有Personal access tokens。点击它。</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://i.postimg.cc/RZgCv341/4.png"></p>
+<p>点击右侧generate new token。</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://i.postimg.cc/sD20t1HC/5.png"></p>
+<p>Note是你令牌的名称（不是令牌密码），随便填一个。</p>
+<p>expiration是令牌有效期限。No expiration代表永久令牌。</p>
+<p>下面是选择相应的权限。一般就选择repo 和delete_repo，其他按需勾选。</p>
+<p>拉到最下面，点击generate token，随后跳出来一个界面，有一串绿底字符串即为你的token令牌。</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://i.postimg.cc/NQk5NFqj/6.png"></p>
+<p><strong>警告！！在这里你一定要将其复制并保存好！建议新建一个txt文件将令牌放入其中！因为这个令牌只会出现一次，你关闭了这个网页，以后GitHub就再也不会告诉你这个令牌了！妥善保管！</strong>（妥善保管！两情若是久长时，又岂在朝朝暮暮？）</p>
+<p>返回刚才的界面，你可以查看已经创建的token和给予的权限与有效期。你可以随时更改，管理，删除它们（<strong>但是不会显示该令牌</strong>）。</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://i.postimg.cc/XvhVyTZp/7.png"></p>
+<p>随后回到你的git或第三方接口，账号还是输入你的username(用户名)，password就输入你复制的令牌。随后登陆就成功了。</p>
+<h3 id="果然，全球最大的同性交流网站不是吹的，大七夕节非得找个伴侣，它要过七夕谁也拦不住呀！"><a href="#果然，全球最大的同性交流网站不是吹的，大七夕节非得找个伴侣，它要过七夕谁也拦不住呀！" class="headerlink" title="果然，全球最大的同性交流网站不是吹的，大七夕节非得找个伴侣，它要过七夕谁也拦不住呀！"></a>果然，全球最大的同性交流网站不是吹的，大七夕节非得找个伴侣，它要过七夕谁也拦不住呀！</h3>
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>License</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>READ NEXT</span></section><section class="body fs14"><a id="next" href="/2021/08/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">我的第一篇博客<span class="note">Older</span></a><div class="line"></div><div class="line"></div><a id="more" href="/archives">All Articles</a></section></div>
+
+
+
+
+
+
+
+
+      
+<footer class="page-footer reveal fs12"><hr><div class="text"><p>All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</p>
+<p>This site was deployed by <a href="https://billma.top/">@Bill Ma</a> using <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.4.1" title="v1.4.1">Stellar</a>.</p>
+</div></footer>
+
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.4.1';
+  stellar.config = {
+    date_suffix: {
+      just: 'Just',
+      min: 'minutes ago',
+      hour: 'hours ago',
+      day: 'days ago',
+      month: 'months ago',
+    },
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js',
+    sitesjs: '/js/plugins/sites.js',
+    friendsjs: '/js/plugins/friends.js',
+  };
+
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js","transition":"blur"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper/swiper-bundle.min.css","js":"https://unpkg.com/swiper/swiper-bundle.min.js"});
+  }
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+
+
+<!-- inject -->
+
+
+  </div>
+</body>
+</html>

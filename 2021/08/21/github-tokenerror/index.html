@@ -21,7 +21,7 @@
 <meta property="og:image" content="https://i.postimg.cc/NQk5NFqj/6.png">
 <meta property="og:image" content="https://i.postimg.cc/XvhVyTZp/7.png">
 <meta property="article:published_time" content="2021-08-21T07:39:00.000Z">
-<meta property="article:modified_time" content="2021-08-21T10:06:04.000Z">
+<meta property="article:modified_time" content="2021-08-21T10:15:26.000Z">
 <meta property="article:author" content="Bill Ma">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://i.postimg.cc/zG2L02b1/Q-R9-VOLZG-DIN2-V0-HF-S8.png">
@@ -73,12 +73,12 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Buscar"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Buscar"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://billma.top"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://billma.top"></form>
       </div>
     </div>
   </div>
@@ -109,9 +109,9 @@
       
         <p><strong>原创文章，转载注明出处！</strong></p>
 <h3 id="1-问题背景-background"><a href="#1-问题背景-background" class="headerlink" title="1.问题背景-background"></a>1.问题背景-background</h3><p>如果你在七夕（没错就是2021年8月14日）<strong>的这一天刚好去访问了全球最大的同性交友网站</strong>，<strong>又刚好去更新提交代码</strong>，<strong>又或你创建了一个新的仓库送给自己</strong>，<strong>又刚好想把这个仓库送给github</strong>，你就刚好会遇到这个问题：remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.<br>大概意思就是你原先的密码凭证从2021年8月13日开始就不能用了，必须使用个人访问令牌（personal access token），就是把你的密码替换成token！</p>
-<p><strong>滚！我他吗懒得弄！</strong></p>
+<p><strong>滚！我tm懒得弄！</strong></p>
 <p><img src="https://i.postimg.cc/zG2L02b1/Q-R9-VOLZG-DIN2-V0-HF-S8.png" alt="我是要通过GitHub上传网站源代码"></p>
-<p> <strong>Github <a target="_blank" rel="noopener" href="https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/">官方解释</a></strong></p>
+<p> <strong>Github [官方解释](<a target="_blank" rel="noopener" href="https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/">https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/</a>  = 1000*800)</strong></p>
 <blockquote>
 <p>We described our motivation as we announced similar changes to authenticating with the API as follows:</p>
 </blockquote>
@@ -136,7 +136,7 @@
 <blockquote>
 <p>4.Random – tokens are not subject to the types of dictionary or brute force attempts that simpler passwords that you need to remember or enter regularly might be</p>
 </blockquote>
-<p>大概意思就是：**<em>为了保证各位程序员的账户安全，我们已于2021年7月14日禁止大家在git及第三方应用上通过密码授权GitHub。以后将使用token令牌代替密码。</em>**<br>（话说能活跃在全球最大同性交友网站的程序猿能有什么秘密值得如此加密。。。）</p>
+<p>大概意思就是：<strong>为了保证各位程序员的账户安全，我们已于2021年7月14日禁止大家在git及第三方应用上通过密码授权GitHub。以后将使用token令牌代替密码。</strong><br>（话说能活跃在全球最大同性交友网站的程序猿能有什么秘密值得如此加密。。。）</p>
 <h3 id="2-什么是token令牌？"><a href="#2-什么是token令牌？" class="headerlink" title="2.什么是token令牌？"></a>2.什么是token令牌？</h3><p>token令牌相当于在第三方接口代替你密码的一个玩意，有点像强密码。但是，token令牌并不是只能有唯一一个的。你可以拥有多个令牌，给不同的第三方接口不同的令牌，而每个令牌都被赋予了不同的权限和使用期限。也就是说，在令牌没赋予的权利将不会给第三方接口和git。当然，token令牌在你设定的期限之后，对应的第三方接口和git就需要你重新给一个令牌，否则也无法使用。令牌也可以随时更改权限和删除。</p>
 <h3 id="3-如何申请token令牌？"><a href="#3-如何申请token令牌？" class="headerlink" title="3.如何申请token令牌？"></a>3.如何申请token令牌？</h3><p>登陆你的GitHub（<strong>注意，在github.com登录你的账户时还是用你的密码，不是令牌</strong>) 点击头像。随后点击settings。</p>
 <p><img src="https://i.postimg.cc/VLBLHGhV/2.png"></p>
@@ -151,7 +151,7 @@
 <p>下面是选择相应的权限。一般就选择repo 和delete_repo，其他按需勾选。</p>
 <p>拉到最下面，点击generate token，随后跳出来一个界面，有一串绿底字符串即为你的token令牌。</p>
 <p><img src="https://i.postimg.cc/NQk5NFqj/6.png"></p>
-<p>**<em>警告！！在这里你一定要将其复制并保存好！建议新建一个txt文件将令牌放入其中！因为这个令牌只会出现一次，你关闭了这个网页，以后GitHub就再也不会告诉你这个令牌了！妥善保管！</em>**（妥善保管！两情若是久长时，又岂在朝朝暮暮？）</p>
+<p><strong>警告！！在这里你一定要将其复制并保存好！建议新建一个txt文件将令牌放入其中！因为这个令牌只会出现一次，你关闭了这个网页，以后GitHub就再也不会告诉你这个令牌了！妥善保管！</strong>（妥善保管！两情若是久长时，又岂在朝朝暮暮？）</p>
 <p>返回刚才的界面，你可以查看已经创建的token和给予的权限与有效期。你可以随时更改，管理，删除它们（<strong>但是不会显示该令牌</strong>）。</p>
 <p><img src="https://i.postimg.cc/XvhVyTZp/7.png"></p>
 <p>随后回到你的git或第三方接口，账号还是输入你的username(用户名)，password就输入你复制的令牌。随后登陆就成功了。</p>
@@ -159,7 +159,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://billma.top/2021/08/21/github-tokenerror/" data-id="ckslll3sp00045kkwdc0r87qr" data-title="世界最大同性交友网站七夕再搞事————remote  ：Support for password authentication was removed on August 13, 2021." class="article-share-link">Compartir</a>
+      <a data-url="https://billma.top/2021/08/21/github-tokenerror/" data-id="ckslll3sp00045kkwdc0r87qr" data-title="世界最大同性交友网站七夕再搞事————remote  ：Support for password authentication was removed on August 13, 2021." class="article-share-link">Teilen</a>
       
       
       
@@ -171,7 +171,7 @@
   
   
     <a href="/2021/08/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Viejo</strong>
+      <strong class="article-nav-caption">Älter</strong>
       <div class="article-nav-title">我的第一篇博客</div>
     </a>
   
@@ -195,7 +195,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archivos</h3>
+    <h3 class="widget-title">Archiv</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li></ul>
     </div>
@@ -205,7 +205,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Posts recientes</h3>
+    <h3 class="widget-title">letzter Beitrag</h3>
     <div class="widget">
       <ul>
         
@@ -239,7 +239,7 @@
     <div id="footer-info" class="inner">
       
       &copy; 2021 Bill Ma<br>
-      Construido por <a href="https://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>

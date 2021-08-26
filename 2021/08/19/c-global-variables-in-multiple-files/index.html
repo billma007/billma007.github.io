@@ -4,7 +4,7 @@
 <head>
   <meta name="generator" content="Hexo 5.4.0">
   <meta charset="utf-8">
-  <meta name="robots" content="noindex,follow">
+  
 
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
@@ -17,17 +17,20 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" content="#f8f8f8">
-  <title>Archives - Bill Ma's Blog</title>
+  <title>C语言中跨文件的全局变量 - Bill Ma's Blog</title>
 
   
-    <meta name="description" content="Welcome to Bill Ma&#39;s blog!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Archives">
-<meta property="og:url" content="https://billma.top/archives/2021/index.html">
+    <meta name="description" content="首先看一段代码 func.c 123456int buf &#x3D; 0;void func() &amp;#123;  buf &#x3D; 2;  &#x2F;*Do something else*&#x2F;&amp;#125;  main.c 1234567891011# include &lt;stdio.h&gt;int buf;void func();int main() &amp;#123;  buf &#x3D; 1;  func();  print">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C语言中跨文件的全局变量">
+<meta property="og:url" content="https://billma.top/2021/08/19/c-global-variables-in-multiple-files/index.html">
 <meta property="og:site_name" content="Bill Ma&#39;s Blog">
-<meta property="og:description" content="Welcome to Bill Ma&#39;s blog!">
+<meta property="og:description" content="首先看一段代码 func.c 123456int buf &#x3D; 0;void func() &amp;#123;  buf &#x3D; 2;  &#x2F;*Do something else*&#x2F;&amp;#125;  main.c 1234567891011# include &lt;stdio.h&gt;int buf;void func();int main() &amp;#123;  buf &#x3D; 1;  func();  print">
 <meta property="og:locale">
+<meta property="article:published_time" content="2021-08-19T08:07:04.000Z">
+<meta property="article:modified_time" content="2021-08-26T10:13:34.000Z">
 <meta property="article:author" content="Bill Ma">
+<meta property="article:tag" content="computer,cpp">
 <meta name="twitter:card" content="summary">
   
   
@@ -53,7 +56,7 @@
 
 
   <div class='l_body' id='start'>
-    <aside class='l_left' layout=''>
+    <aside class='l_left' layout='post'>
     
 
 
@@ -62,263 +65,59 @@
 <div class="logo-wrap"><a class="title" href="/"><div class="main">Bill Ma's Blog</div><div class="sub cap">Welcome!</div></a></div>
 <nav class="menu dis-select"><a class="nav-item active" href="/archives/">文章</a><a class="nav-item" href="/">主页</a><a class="nav-item" href="/myself/">更多</a><a class="nav-item" href="/calall/">Calall</a></nav></header>
 
-<div class="widgets"><div class='widget-wrap' id='markdown'>
-  <div class='widget-header cap dis-select'>
-    <span class='name'>Welcome！</span>
-  </div>
-  <div class='widget-body fs14'>
-    
-      <p>欢迎光临我的小站，我会经常分享一些我的心得和博客。</p>
+<div class="widgets">
 
-    
-      <p>如果有任何意见，<a href="https://billma.top/myself">可以点此</a>与我联系。</p>
-
-    
-  </div>
-</div>
 
 <div class="widget-wrap" id="recent"><div class="widget-header cap dis-select"><span class="name">Recent Update</span></div><div class="widget-body fs14"><div class="line"></div><a class="more-item" href="/2021/08/19/c-global-variables-in-multiple-files/"><div class="cap"><time>2021-08-26</time></div><span class="title">C语言中跨文件的全局变量</span></a><div class="line"></div><a class="more-item" href="/2021/08/04/cpp-fstream/"><div class="cap"><time>2021-08-26</time></div><span class="title">C++中fstream的用法</span></a><div class="line"></div><a class="more-item" href="/2021/08/26/cpp-begin-1/"><div class="cap"><time>2021-08-26</time></div><span class="title">从零开始C++——1</span></a><div class="line"></div><a class="more-item" href="/2021/08/12/a-b-problem/"><div class="cap"><time>2021-08-26</time></div><span class="title">不同的C++中求解A+B的方法</span></a><div class="line"></div><a class="more-item" href="/2021/08/26/cpp-constructor-exception/"><div class="cap"><time>2021-08-26</time></div><span class="title">cpp-constructor-exception</span></a></div></div>
+
+
+
 </div>
 
 
     </aside>
-    <div class='l_main list'>
+    <div class='l_main'>
       
-  
-
-<header class="header mobile-only">
-
-<div class="logo-wrap"><a class="title" href="/"><div class="main">Bill Ma's Blog</div><div class="sub cap">Welcome!</div></a></div>
-<nav class="menu dis-select"><a class="nav-item active" href="/archives/">文章</a><a class="nav-item" href="/">主页</a><a class="nav-item" href="/myself/">更多</a><a class="nav-item" href="/calall/">Calall</a></nav></header>
-
-
 
       
 
-  
-  <div class='nav-wrap mobile-hidden'>
-  <nav class='sub post cap'>
-    
-      <a href='/'>Recent</a>
-    
-    
-    
-      
-        <a href='/tags'>Tags</a>
-      
-    
-    
-      
-        <a class='active' href='/archives'>Archives</a>
-      
-    
-  </nav>
-</div>
 
-  <div class='post-list'>
-  	
-  	
-  		
-  		
-  			
-  		
-  	
-  		
-  		
-  	
-  		
-  		
-  	
-  		
-  		
-  	
-  		
-  		
-  	
-  		
-  		
-  	
-  		
-  		
-  	
-  		
-  		
-  	
-  		
-  		
-  	
-  		
-  		
-  	
-  		
-  		
-  	
-  		
-  		
-  	
-  	
-  		<article class='post-card' id='archive'>
-  			<div class='archive-year h4'>2021</div>
-  			
-  				
-  		    
-  				
-  		    
-  				
-  		    
-  				
-  		    
-  				
-  		    
-  				
-  		    
-  				
-  		    
-  				
-  		    
-  				
-  		    
-  				
-  		    
-  				
-  		    
-  				
-  		    
-  				<div>
-            <a class='post fs14' href="/2021/08/26/cpp-begin-1/">
-    					<time>08-26</time>
-    					<span>
-                
-      						从零开始C++——1
-      					
-              </span>
-    				</a>
-          </div>
-  			
-  				<div>
-            <a class='post fs14' href="/2021/08/26/cpp-constructor-exception/">
-    					<time>08-26</time>
-    					<span>
-                
-      						cpp-constructor-exception
-      					
-              </span>
-    				</a>
-          </div>
-  			
-  				<div>
-            <a class='post fs14' href="/2021/08/26/lcs-suffix-array/">
-    					<time>08-26</time>
-    					<span>
-                
-      						最长公共子串问题的后缀数组
-      					
-              </span>
-    				</a>
-          </div>
-  			
-  				<div>
-            <a class='post fs14' href="/2021/08/23/csp/">
-    					<time>08-23</time>
-    					<span>
-                
-      						csp指南
-      					
-              </span>
-    				</a>
-          </div>
-  			
-  				<div>
-            <a class='post fs14' href="/2021/08/19/c-global-variables-in-multiple-files/">
-    					<time>08-19</time>
-    					<span>
-                
-      						C语言中跨文件的全局变量
-      					
-              </span>
-    				</a>
-          </div>
-  			
-  				<div>
-            <a class='post fs14' href="/2021/08/15/github-tokenerror/">
-    					<time>08-15</time>
-    					<span>
-                
-      						世界最大同性交友网站七夕再搞事————remote  ：Support for password authentication was removed on August 13, 2021.
-      					
-              </span>
-    				</a>
-          </div>
-  			
-  				<div>
-            <a class='post fs14' href="/2021/08/12/a-b-problem/">
-    					<time>08-12</time>
-    					<span>
-                
-      						不同的C++中求解A+B的方法
-      					
-              </span>
-    				</a>
-          </div>
-  			
-  				<div>
-            <a class='post fs14' href="/2021/08/07/calall2/">
-    					<time>08-07</time>
-    					<span>
-                
-      						Calall产品发布页
-      					
-              </span>
-    				</a>
-          </div>
-  			
-  				<div>
-            <a class='post fs14' href="/2021/08/04/cpp-fstream/">
-    					<time>08-04</time>
-    					<span>
-                
-      						C++中fstream的用法
-      					
-              </span>
-    				</a>
-          </div>
-  			
-  				<div>
-            <a class='post fs14' href="/2021/08/01/cpp-string/">
-    					<time>08-01</time>
-    					<span>
-                
-      						C++ 中string用法详解
-      					
-              </span>
-    				</a>
-          </div>
-  			
-  				<div>
-            <a class='post fs14' href="/2021/07/21/stl_use/">
-    					<time>07-21</time>
-    					<span>
-                
-      						C++中如何使用struct和STL创建链表结构
-      					
-              </span>
-    				</a>
-          </div>
-  			
-  				<div>
-            <a class='post fs14' href="/2021/07/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
-    					<time>07-10</time>
-    					<span>
-                
-      						我的第一篇博客
-      					
-              </span>
-    				</a>
-          </div>
-  			
-  		</article>
-  	
-  </div>
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">Home</a><span class="sep"></span><a class="cap breadcrumb" href="/">Blog</a></div><div id="post-meta">Posted on&nbsp;<time datetime="2021-08-19T08:07:04.000Z">2021-08-19</time></div></div>
+
+<article class='content md post'>
+<h1 class="article-title"><span>C语言中跨文件的全局变量</span></h1>
+<p>首先看一段代码</p>
+<p><strong>func.c</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> buf = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">func</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  buf = <span class="number">2</span>;</span><br><span class="line">  <span class="comment">/*Do something else*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>main.c</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> buf;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">func</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  buf = <span class="number">1</span>;</span><br><span class="line">  <span class="built_in">func</span>();</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, buf);</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>编译两个文件，输出的结果是怎样的呢？一眼看上去，可能会输出1，因为两个全局变量buf在不同文件中，又没有extern声明，显然是两个嘛。然而实际上它的运行结果却是2，这说明了这两个文件中引用到的其实是一个变量！</p>
+<p>这是为什么呢？原因是在编译时，C语言编译器将全局符号标记为strong和weak两类：</p>
+<p>函数和初始化的全局符号被标记为strong<br>未初始化的全局符号被标记为weak<br>连接时，连接器对多重定义的全局符号的解析原则如下：</p>
+<p>同一个符号不允许有多个strong定义；<br>假如一个符号有一个strong定义和多个weak定义，那么采用该符号的strong定义；<br>假如一个符号有多个weak定义，那么选取任意一个weak定义<br>由于两个变量一个初始化了，一个没有初始化，所以一个是strong，一个是weak，所以连接器在符号解析时会把他们当成一个。</p>
+<p>如果我们把main.c中的buf也初始化了：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> buf = <span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">func</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  buf = <span class="number">1</span>;</span><br><span class="line">  <span class="built_in">func</span>();</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, buf);</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>再次编译就会发现</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">duplicate symbol _buf in:</span><br><span class="line">    /var/folders/44/_cc501qx1jd1p5bfrjbk6b100000gn/T//ccZ87C6g.o</span><br><span class="line">    /var/folders/44/_cc501qx1jd1p5bfrjbk6b100000gn/T//ccZlES8n.o</span><br><span class="line">ld: 1 duplicate symbol for architecture x86_64</span><br><span class="line">collect2: ld returned 1 exit status</span><br></pre></td></tr></table></figure>
+
+<p>这是因为两个全局变量都是strong的。</p>
+
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>License</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>READ NEXT</span></section><section class="body fs14"><a id="next" href="/2021/08/15/github-tokenerror/">世界最大同性交友网站七夕再搞事————remote  ：Support for password authentication was removed on August 13, 2021.<span class="note">Older</span></a><div class="line"></div><a id="prev" href="/2021/08/23/csp/">csp指南<span class="note">Newer</span></a><div class="line"></div><a id="more" href="/archives">All Articles</a></section></div>
+
+
+
+
+
+
 
 
       

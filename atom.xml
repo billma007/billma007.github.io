@@ -6,7 +6,7 @@
   <link href="https://billma.top/atom.xml" rel="self"/>
   
   <link href="https://billma.top/"/>
-  <updated>2021-08-26T10:12:36.000Z</updated>
+  <updated>2021-08-26T12:20:24.000Z</updated>
   <id>https://billma.top/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python之matplotlib详细教程</title>
+    <link href="https://billma.top/2021/08/26/python-matplotlib/"/>
+    <id>https://billma.top/2021/08/26/python-matplotlib/</id>
+    <published>2021-08-26T11:44:55.000Z</published>
+    <updated>2021-08-26T12:20:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-安装"><a href="#1-安装" class="headerlink" title="1.安装"></a>1.安装</h1><p><strong>前提：你已经安装了python并且在安装时勾选了Add Python to PATH</strong></p><p>打开cmd，输入如下指令：（不要复制粘贴）</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install matplotlib</span><br><span class="line">pip install numpy</span><br></pre></td></tr></table></figure><p>安装完后打开python，就可以开始了！</p><h1 id="2-头文件"><a href="#2-头文件" class="headerlink" title="2.头文件"></a>2.头文件</h1><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br></pre></td></tr></table></figure><h1 id="3-请求一个新的figure对象"><a href="#3-请求一个新的figure对象" class="headerlink" title="3.请求一个新的figure对象"></a>3.请求一个新的figure对象</h1><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plt.figure()</span><br></pre></td></tr></table></figure><h1 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h1>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;1-安装&quot;&gt;&lt;a href=&quot;#1-安装&quot; class=&quot;headerlink&quot; title=&quot;1.安装&quot;&gt;&lt;/a&gt;1.安装&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;前提：你已经安装了python并且在安装时勾选了Add Python to PATH&lt;/strong&gt;&lt;/p</summary>
+      
+    
+    
+    
+    
+    <category term="python" scheme="https://billma.top/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>从零开始C++——1</title>

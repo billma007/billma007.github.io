@@ -17,19 +17,20 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" content="#f8f8f8">
-  <title>最长公共子串问题的后缀数组 - Bill Ma's Blog</title>
+  <title>GitHub下载速度太慢怎么办？ - Bill Ma's Blog</title>
 
   
-    <meta name="description" content="最长公共子串最长公共子串(Longest Common Substring ,简称LCS)问题，是指求给定的一组字符串长度最大的共有的子串的问题。例如字符串”abcb”,“bca”,“acbc”的LCS就是”bc”。 求多串的LCS，显然穷举法是极端低效的算法。改进一些的算法是用一个串的每个后缀对其他所有串进行部分匹配，用KMP算法，时间复杂度为O(NL^2)，其中N为字符串个数，L为每个串的长度">
+    <meta name="description" content="在本站中，有一些下载项目是我通过GitHub仓库上传的（下载地址：billmarepo.github.io）,但是GitHub在中国大陆地区访问较慢，下载速度更是令人感慨（但是亲测速度比百度网盘快）。那么，在下载本站资源时遇到GitHub下载太慢该如何处置？ 1.复制找到下载的资源，右击选择：复制目标链接（反正就这个意思，不同浏览器显示不同）。 2.GitHub文件加速利用 Cloudflare">
 <meta property="og:type" content="article">
-<meta property="og:title" content="最长公共子串问题的后缀数组">
-<meta property="og:url" content="https://billma.top/2021/08/26/lcs-suffix-array/index.html">
+<meta property="og:title" content="GitHub下载速度太慢怎么办？">
+<meta property="og:url" content="https://billma.top/2021/08/29/github-speed-up-download/index.html">
 <meta property="og:site_name" content="Bill Ma&#39;s Blog">
-<meta property="og:description" content="最长公共子串最长公共子串(Longest Common Substring ,简称LCS)问题，是指求给定的一组字符串长度最大的共有的子串的问题。例如字符串”abcb”,“bca”,“acbc”的LCS就是”bc”。 求多串的LCS，显然穷举法是极端低效的算法。改进一些的算法是用一个串的每个后缀对其他所有串进行部分匹配，用KMP算法，时间复杂度为O(NL^2)，其中N为字符串个数，L为每个串的长度">
+<meta property="og:description" content="在本站中，有一些下载项目是我通过GitHub仓库上传的（下载地址：billmarepo.github.io）,但是GitHub在中国大陆地区访问较慢，下载速度更是令人感慨（但是亲测速度比百度网盘快）。那么，在下载本站资源时遇到GitHub下载太慢该如何处置？ 1.复制找到下载的资源，右击选择：复制目标链接（反正就这个意思，不同浏览器显示不同）。 2.GitHub文件加速利用 Cloudflare">
 <meta property="og:locale">
-<meta property="article:published_time" content="2021-08-26T07:57:30.000Z">
-<meta property="article:modified_time" content="2021-08-26T08:07:38.000Z">
+<meta property="article:published_time" content="2021-08-29T07:17:38.000Z">
+<meta property="article:modified_time" content="2021-08-29T07:28:28.000Z">
 <meta property="article:author" content="Bill Ma">
+<meta property="article:tag" content="github">
 <meta name="twitter:card" content="summary">
   
   
@@ -66,7 +67,7 @@
 
 <div class="widgets">
 
-<div class="widget-wrap single" id="toc"><div class="widget-header cap dis-select"><span class="name">TOC</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E4%B8%B2"><span class="toc-text">最长公共子串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E4%B8%B2%E9%97%AE%E9%A2%98%E7%9A%84%E5%90%8E%E7%BC%80%E6%95%B0%E7%BB%84%E8%A7%A3%E6%B3%95"><span class="toc-text">最长公共子串问题的后缀数组解法</span></a></li></ol></div></div></div>
+<div class="widget-wrap single" id="toc"><div class="widget-header cap dis-select"><span class="name">TOC</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%A4%8D%E5%88%B6"><span class="toc-text">1.复制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-GitHub%E6%96%87%E4%BB%B6%E5%8A%A0%E9%80%9F"><span class="toc-text">2.GitHub文件加速</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Github-%E5%8A%A0%E9%80%9F%E4%B8%8B%E8%BD%BD"><span class="toc-text">3.Github 加速下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%85%B6%E4%BB%96%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5"><span class="toc-text">4.其他友情链接</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%98%E7%BD%91%E9%95%9C%E5%83%8F%EF%BC%88%E5%8F%AF%E4%BB%A5%E7%94%A8%E6%9D%A5clone-push%E7%AD%89-%E4%BD%86%E6%98%AF%E4%B8%8D%E8%83%BD%E7%99%BB%E5%BD%95%EF%BC%89"><span class="toc-text">官网镜像（可以用来clone push等,但是不能登录）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#API%E9%95%9C%E5%83%8F%EF%BC%88%E7%94%A8%E6%9D%A5api%E6%93%8D%E4%BD%9C%EF%BC%89"><span class="toc-text">API镜像（用来api操作）</span></a></li></ol></li></ol></div></div></div>
 
 
 </div>
@@ -79,22 +80,20 @@
       
 
 
-<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">Home</a><span class="sep"></span><a class="cap breadcrumb" href="/">Blog</a></div><div id="post-meta">Posted on&nbsp;<time datetime="2021-08-26T07:57:30.000Z">2021-08-26</time></div></div>
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">Home</a><span class="sep"></span><a class="cap breadcrumb" href="/">Blog</a></div><div id="post-meta">Posted on&nbsp;<time datetime="2021-08-29T07:17:38.000Z">2021-08-29</time></div></div>
 
 <article class='content md post'>
-<h1 class="article-title"><span>最长公共子串问题的后缀数组</span></h1>
-<h3 id="最长公共子串"><a href="#最长公共子串" class="headerlink" title="最长公共子串"></a>最长公共子串</h3><p>最长公共子串(Longest Common Substring ,简称LCS)问题，是指求给定的一组字符串长度最大的共有的子串的问题。例如字符串”abcb”,“bca”,“acbc”的LCS就是”bc”。</p>
-<p>求多串的LCS，显然穷举法是极端低效的算法。改进一些的算法是用一个串的每个后缀对其他所有串进行部分匹配，用KMP算法，时间复杂度为O(NL^2)，其中N为字符串个数，L为每个串的长度。更优秀的有广义后缀树的方法，时间可以达到 O(NL)。本文介绍一种基于后缀数组的LCS解法，利用二分查找技术，时间复杂度可以达到O(NLlogL)。</p>
-<h3 id="最长公共子串问题的后缀数组解法"><a href="#最长公共子串问题的后缀数组解法" class="headerlink" title="最长公共子串问题的后缀数组解法"></a>最长公共子串问题的后缀数组解法</h3><p>关于后缀数组的构建方法以及Height数组的性质，本文不再具体介绍，可以参阅IOI国家集训队2004年论文《后缀数组》(许智磊)和IOI国家集训队2009年论文《后缀数组——处理字符串的有力工具》(罗穗骞)。</p>
-<p>回顾一下后缀数组，SA[i]表示排名第i的后缀的位置，Height[i]表示后缀SA[i]和SA[i-1]的最长公共前缀(Longest Common Prefix,LCP)，简记为Height[i]=LCP(SA[i],SA[i-1])。连续的一段后缀SA[i..j]的最长公共前缀，就是H[i-1..j]的最小值，即LCP(SA[i..j])=Min(H[i-1..j])。</p>
-<p>求N个串的最长公共子串，可以转化为求一些后缀的最长公共前缀的最大值，这些后缀应分属于N个串。具体方法如下：</p>
-<p>设N个串分别为S1,S2,S3,…,SN，首先建立一个串S，把这N个串用不同的分隔符连接起来。S=S1[P1]S2[P2]S3…SN-1[PN-1]SN，P1,P2,…PN-1应为不同的N-1个不在字符集中的字符，作为分隔符(后面会解释为什么)。</p>
-<p>接下来，求出字符串S的后缀数组和Height数组，可以用倍增算法，或DC3算法。</p>
-<p>然后二分枚举答案A，假设N个串可以有长度为A的公共字串，并对A的可行性进行验证。如果验证A可行，A’(A’&lt; A)也一定可行，尝试增大A，反之尝试缩小A。最终可以取得A的最大可行值，就是这N个串的最长公共子串的长度。可以证明，尝试次数是O(logL)的。</p>
-<p>于是问题就集中到了，如何验证给定的长度A是否为可行解。方法是，找出在Height数组中找出连续的一段Height[i..j]，使得i&lt;=k&lt;=j均满足Height[k]&gt;=A，并且i-1&lt;=k&lt;=j中，SA[k]分属于原有N个串S1..SN。如果能找到这样的一段，那么A就是可行解，否则A不是可行解。</p>
-<p>具体查找i..j时，可以先从前到后枚举i的位置，如果发现Height[i]&gt;=A，则开始从i向后枚举j的位置，直到找到了Height[j+1] &lt; A，判断[i..j]这个区间内SA是否分属于S1..SN。如果满足，则A为可行解，然后直接返回，否则令i=j+1继续向后枚举。S中每个字符被访问了O(1)次，S的长度为NL+N-1，所以验证的时间复杂度为O(NL)。</p>
-<p>到这里，我们就可以理解为什么分隔符P1..PN-1必须是不同的N-1个不在字符集中的字符了，因为这样才能保证S的后缀的公共前缀不会跨出一个原有串的范围。</p>
-<p>后缀数组是一种处理字符串的强大的数据结构，配合LCP函数与Height数组的性质，后缀数组更是如虎添翼。利用后缀数组，容易地求出了多个串的LCS，而且时空复杂度也相当优秀了。虽然比起后缀树的解法有所不如，但其简明的思路和容易编程的特点却在实际的应用中并不输于后缀树。</p>
+<h1 class="article-title"><span>GitHub下载速度太慢怎么办？</span></h1>
+<p>在本站中，有一些下载项目是我通过GitHub仓库上传的（下载地址：<a href="billmarepo.github.io">billmarepo.github.io</a>）,但是GitHub在中国大陆地区访问较慢，下载速度更是令人感慨（但是亲测速度比百度网盘快）。那么，在下载本站资源时遇到GitHub下载太慢该如何处置？</p>
+<h2 id="1-复制"><a href="#1-复制" class="headerlink" title="1.复制"></a>1.复制</h2><p>找到下载的资源，右击选择：复制目标链接（反正就这个意思，不同浏览器显示不同）。</p>
+<h2 id="2-GitHub文件加速"><a href="#2-GitHub文件加速" class="headerlink" title="2.GitHub文件加速"></a>2.GitHub文件加速</h2><p>利用 Cloudflare Workers 对 github release 、archive 以及项目文件进行加速，部署无需服务器且自带CDN.<br><a target="_blank" rel="noopener" href="https://gh.api.99988866.xyz/">https://gh.api.99988866.xyz</a><br><a target="_blank" rel="noopener" href="https://ghproxy.com/">https://ghproxy.com/</a><br>以上网站为演示站点，如无法打开可以查看开源项目：gh-proxy-GitHub 文件加速自行部署。</p>
+<h2 id="3-Github-加速下载"><a href="#3-Github-加速下载" class="headerlink" title="3.Github 加速下载"></a>3.Github 加速下载</h2><p>将你复制的链接到以下网址就可以加速下载了！</p>
+<p>地址：<a target="_blank" rel="noopener" href="http://toolwa.com/github/">http://toolwa.com/github/</a></p>
+<h2 id="4-其他友情链接"><a href="#4-其他友情链接" class="headerlink" title="4.其他友情链接"></a>4.其他友情链接</h2><h3 id="官网镜像（可以用来clone-push等-但是不能登录）"><a href="#官网镜像（可以用来clone-push等-但是不能登录）" class="headerlink" title="官网镜像（可以用来clone push等,但是不能登录）"></a>官网镜像（可以用来clone push等,但是不能登录）</h3><p><a target="_blank" rel="noopener" href="https://github.com.cnpmjs.org/">https://github.com.cnpmjs.org/</a></p>
+<p><a target="_blank" rel="noopener" href="https://hub.fastgit.org/">https://hub.fastgit.org/</a> <strong>（速度最快）</strong></p>
+<p><a target="_blank" rel="noopener" href="https://github.wuyanzheshui.workers.dev/">https://github.wuyanzheshui.workers.dev/</a></p>
+<h3 id="API镜像（用来api操作）"><a href="#API镜像（用来api操作）" class="headerlink" title="API镜像（用来api操作）"></a>API镜像（用来api操作）</h3><p><a target="_blank" rel="noopener" href="https://api.git.sdut.me/">https://api.git.sdut.me/</a></p>
+<p><a target="_blank" rel="noopener" href="https://v2.kkpp.cc/">https://v2.kkpp.cc/</a></p>
 
 
 <div class="article-footer reveal fs14"><section id="license"><div class="header"><span>License</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
@@ -102,7 +101,7 @@
 
 </article>
 
-<div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>READ NEXT</span></section><section class="body fs14"><a id="next" href="/2021/08/23/csp/">csp指南<span class="note">Older</span></a><div class="line"></div><a id="prev" href="/2021/08/26/cpp-constructor-exception/">C++ 中如何处理错误和异常？<span class="note">Newer</span></a><div class="line"></div><a id="more" href="/archives">All Articles</a></section></div>
+<div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>READ NEXT</span></section><section class="body fs14"><a id="next" href="/2021/08/26/python-matplotlib/">python之matplotlib详细教程<span class="note">Older</span></a><div class="line"></div><div class="line"></div><a id="more" href="/archives">All Articles</a></section></div>
 
 
 

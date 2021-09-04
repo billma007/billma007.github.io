@@ -6,7 +6,7 @@
   <link href="https://billma.top/atom.xml" rel="self"/>
   
   <link href="https://billma.top/"/>
-  <updated>2021-08-29T08:17:16.000Z</updated>
+  <updated>2021-09-04T12:45:54.000Z</updated>
   <id>https://billma.top/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何科学上网？</title>
+    <link href="https://billma.top/2021/09/04/vpn-how-to-open/"/>
+    <id>https://billma.top/2021/09/04/vpn-how-to-open/</id>
+    <published>2021-09-04T12:32:35.000Z</published>
+    <updated>2021-09-04T12:45:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>相信很多同学都想科学上网，但是由于工 信 部的限制，很少有人能真正科学上网。我今天就介绍几个我长期摸索出来的科学上网工具。</p><h2 id="1-Windows"><a href="#1-Windows" class="headerlink" title="1.Windows"></a>1.Windows</h2><h4 id="1-安装-Microsoft-edge"><a href="#1-安装-Microsoft-edge" class="headerlink" title="1.安装 Microsoft edge"></a>1.安装 Microsoft edge</h4><p>其实理论上Google Chrome更加适合，但是你想接下来的操作本身需要科学上网才能访问Google play，所以在这里使用Microsoft edge。</p><p><a href="https://dl.softmgr.qq.com/original/Browser/MicrosoftEdgeSetup-win7-92.0.902.84.exe">Windows7点这里下载</a></p><p><a href="https://dl.softmgr.qq.com/original/Browser/MicrosoftEdgeSetup-win10-92.0.902.84.exe">Windows10点这里下载</a></p><h4 id="2-安装扩展"><a href="#2-安装扩展" class="headerlink" title="2.安装扩展"></a>2.安装扩展</h4><p>打开edge，<a href="https://microsoftedge.microsoft.com/addons/detail/setupvpn-lifetime-free-/okhjkpgblgdjappgfgakbcecdblgffcl?hl=zh-CN">打开这个网页</a>,点击安装即可。</p><h4 id="3-配置"><a href="#3-配置" class="headerlink" title="3.配置"></a>3.配置</h4><p>点开这个科学上网工具，选择汉语，会跳出一个输入邀请码的东西，不要管他，下面有一个create new account，点击，然后三个协议全选择，跳出一个页面，选择美国即可。</p><h2 id="2-iOS-iphone-or-ipad"><a href="#2-iOS-iphone-or-ipad" class="headerlink" title="2.iOS(iphone or ipad)"></a>2.iOS(iphone or ipad)</h2><h4 id="1-获取Apple-ID"><a href="#1-获取Apple-ID" class="headerlink" title="1.获取Apple ID"></a>1.获取Apple ID</h4><p>由于上述国家部门的要求，Apple Inc中国区下架了所有科学上网工具。所以，现在手机上<a href="apple.com">点击这里</a>注册<strong>一个新的</strong>Apple ID。</p><p>注意，在注册时会让你选择国家与地区，选择美国即可。</p><h4 id="2-登录"><a href="#2-登录" class="headerlink" title="2.登录"></a>2.登录</h4><p>随后，点开App Store，登出后登陆你新注册的Apple ID，随后自动跳转到美国区，搜索V P N 3 6 0即可。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;相信很多同学都想科学上网，但是由于工 信 部的限制，很少有人能真正科学上网。我今天就介绍几个我长期摸索出来的科学上网工具。&lt;/p&gt;
+&lt;h2 id=&quot;1-Windows&quot;&gt;&lt;a href=&quot;#1-Windows&quot; class=&quot;headerlink&quot; title=&quot;1.Win</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>今日编程发现--缩进问题</title>

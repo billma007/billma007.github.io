@@ -6,7 +6,7 @@
   <link href="https://billma.top/atom.xml" rel="self"/>
   
   <link href="https://billma.top/"/>
-  <updated>2021-09-04T12:45:54.000Z</updated>
+  <updated>2021-09-04T13:42:00.000Z</updated>
   <id>https://billma.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://billma.top/2021/09/04/vpn-how-to-open/"/>
     <id>https://billma.top/2021/09/04/vpn-how-to-open/</id>
     <published>2021-09-04T12:32:35.000Z</published>
-    <updated>2021-09-04T12:45:54.000Z</updated>
+    <updated>2021-09-04T13:42:00.000Z</updated>
     
     <content type="html"><![CDATA[<p>相信很多同学都想科学上网，但是由于工 信 部的限制，很少有人能真正科学上网。我今天就介绍几个我长期摸索出来的科学上网工具。</p><h2 id="1-Windows"><a href="#1-Windows" class="headerlink" title="1.Windows"></a>1.Windows</h2><h4 id="1-安装-Microsoft-edge"><a href="#1-安装-Microsoft-edge" class="headerlink" title="1.安装 Microsoft edge"></a>1.安装 Microsoft edge</h4><p>其实理论上Google Chrome更加适合，但是你想接下来的操作本身需要科学上网才能访问Google play，所以在这里使用Microsoft edge。</p><p><a href="https://dl.softmgr.qq.com/original/Browser/MicrosoftEdgeSetup-win7-92.0.902.84.exe">Windows7点这里下载</a></p><p><a href="https://dl.softmgr.qq.com/original/Browser/MicrosoftEdgeSetup-win10-92.0.902.84.exe">Windows10点这里下载</a></p><h4 id="2-安装扩展"><a href="#2-安装扩展" class="headerlink" title="2.安装扩展"></a>2.安装扩展</h4><p>打开edge，<a href="https://microsoftedge.microsoft.com/addons/detail/setupvpn-lifetime-free-/okhjkpgblgdjappgfgakbcecdblgffcl?hl=zh-CN">打开这个网页</a>,点击安装即可。</p><h4 id="3-配置"><a href="#3-配置" class="headerlink" title="3.配置"></a>3.配置</h4><p>点开这个科学上网工具，选择汉语，会跳出一个输入邀请码的东西，不要管他，下面有一个create new account，点击，然后三个协议全选择，跳出一个页面，选择美国即可。</p><h2 id="2-iOS-iphone-or-ipad"><a href="#2-iOS-iphone-or-ipad" class="headerlink" title="2.iOS(iphone or ipad)"></a>2.iOS(iphone or ipad)</h2><h4 id="1-获取Apple-ID"><a href="#1-获取Apple-ID" class="headerlink" title="1.获取Apple ID"></a>1.获取Apple ID</h4><p>由于上述国家部门的要求，Apple Inc中国区下架了所有科学上网工具。所以，现在手机上<a href="apple.com">点击这里</a>注册<strong>一个新的</strong>Apple ID。</p><p>注意，在注册时会让你选择国家与地区，选择美国即可。</p><h4 id="2-登录"><a href="#2-登录" class="headerlink" title="2.登录"></a>2.登录</h4><p>随后，点开App Store，登出后登陆你新注册的Apple ID，随后自动跳转到美国区，搜索V P N 3 6 0即可。</p>]]></content>
     
@@ -33,6 +33,8 @@
       
     
     
+    
+    <category term="日常经验" scheme="https://billma.top/categories/%E6%97%A5%E5%B8%B8%E7%BB%8F%E9%AA%8C/"/>
     
     
   </entry>
@@ -63,7 +65,7 @@
     <link href="https://billma.top/2021/08/29/github-speed-up-download/"/>
     <id>https://billma.top/2021/08/29/github-speed-up-download/</id>
     <published>2021-08-29T07:17:38.000Z</published>
-    <updated>2021-08-29T07:28:28.000Z</updated>
+    <updated>2021-09-04T13:42:22.000Z</updated>
     
     <content type="html"><![CDATA[<p>在本站中，有一些下载项目是我通过GitHub仓库上传的（下载地址：<a href="billmarepo.github.io">billmarepo.github.io</a>）,但是GitHub在中国大陆地区访问较慢，下载速度更是令人感慨（但是亲测速度比百度网盘快）。那么，在下载本站资源时遇到GitHub下载太慢该如何处置？</p><h2 id="1-复制"><a href="#1-复制" class="headerlink" title="1.复制"></a>1.复制</h2><p>找到下载的资源，右击选择：复制目标链接（反正就这个意思，不同浏览器显示不同）。</p><h2 id="2-GitHub文件加速"><a href="#2-GitHub文件加速" class="headerlink" title="2.GitHub文件加速"></a>2.GitHub文件加速</h2><p>利用 Cloudflare Workers 对 github release 、archive 以及项目文件进行加速，部署无需服务器且自带CDN.<br><a href="https://gh.api.99988866.xyz/">https://gh.api.99988866.xyz</a><br><a href="https://ghproxy.com/">https://ghproxy.com/</a><br>以上网站为演示站点，如无法打开可以查看开源项目：gh-proxy-GitHub 文件加速自行部署。</p><h2 id="3-Github-加速下载"><a href="#3-Github-加速下载" class="headerlink" title="3.Github 加速下载"></a>3.Github 加速下载</h2><p>将你复制的链接到以下网址就可以加速下载了！</p><p>地址：<a href="http://toolwa.com/github/">http://toolwa.com/github/</a></p><h2 id="4-其他友情链接"><a href="#4-其他友情链接" class="headerlink" title="4.其他友情链接"></a>4.其他友情链接</h2><h3 id="官网镜像（可以用来clone-push等-但是不能登录）"><a href="#官网镜像（可以用来clone-push等-但是不能登录）" class="headerlink" title="官网镜像（可以用来clone push等,但是不能登录）"></a>官网镜像（可以用来clone push等,但是不能登录）</h3><p><a href="https://github.com.cnpmjs.org/">https://github.com.cnpmjs.org/</a></p><p><a href="https://hub.fastgit.org/">https://hub.fastgit.org/</a> <strong>（速度最快）</strong></p><p><a href="https://github.wuyanzheshui.workers.dev/">https://github.wuyanzheshui.workers.dev/</a></p><h3 id="API镜像（用来api操作）"><a href="#API镜像（用来api操作）" class="headerlink" title="API镜像（用来api操作）"></a>API镜像（用来api操作）</h3><p><a href="https://api.git.sdut.me/">https://api.git.sdut.me/</a></p><p><a href="https://v2.kkpp.cc/">https://v2.kkpp.cc/</a></p>]]></content>
     
@@ -74,6 +76,8 @@
       
     
     
+    
+    <category term="日常经验" scheme="https://billma.top/categories/%E6%97%A5%E5%B8%B8%E7%BB%8F%E9%AA%8C/"/>
     
     
     <category term="github" scheme="https://billma.top/tags/github/"/>
@@ -222,7 +226,7 @@
     <link href="https://billma.top/2021/08/15/github-tokenerror/"/>
     <id>https://billma.top/2021/08/15/github-tokenerror/</id>
     <published>2021-08-15T07:39:00.000Z</published>
-    <updated>2021-08-25T13:41:16.000Z</updated>
+    <updated>2021-09-04T13:42:14.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong>原创文章，转载注明出处！</strong></p><h3 id="1-问题背景-background"><a href="#1-问题背景-background" class="headerlink" title="1.问题背景-background"></a>1.问题背景-background</h3><p>如果你在七夕（没错就是2021年8月14日）<strong>的这一天去访问了全球最大的同性交友网站</strong>，<strong>又刚好去更新提交代码</strong>，<strong>或者你创建了一个新的仓库送给自己</strong>，<strong>又刚好想把这个仓库送给github</strong>，你就刚好会遇到这个问题：remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.<br>大概意思就是你原先的密码凭证从2021年8月13日开始就不能用了，必须使用个人访问令牌（personal access token），就是把你的密码替换成token！</p><p><strong>滚！我tm懒得弄！</strong></p><p><img src="https://i.postimg.cc/zG2L02b1/Q-R9-VOLZG-DIN2-V0-HF-S8.png"> </p><p> <strong>Github <a href="https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/">官方解释</a></strong></p><blockquote><p>We described our motivation as we announced similar changes to authenticating with the API as follows:</p></blockquote><blockquote><p>In recent years, GitHub customers have benefited from a number of security enhancements to GitHub.com, such as two-factor authentication, sign-in alerts, verified devices, preventing the use of compromised passwords, and WebAuthn support. These features make it more difficult for an attacker to take a password that’s been reused across multiple websites and use it to try to gain access to your GitHub account. Despite these improvements, for historical reasons customers without two-factor authentication enabled have been able to continue to authenticate Git and API operations using only their GitHub username and password.</p></blockquote><blockquote><p>Beginning August 13, 2021, we will no longer accept account passwords when authenticating Git operations and will require the use of token-based authentication, such as a personal access token (for developers) or an OAuth or GitHub App installation token (for integrators) for all authenticated Git operations on GitHub.com. You may also continue using SSH keys where you prefer.</p></blockquote><blockquote><p>Tokens offer a number of security benefits over password-based authentication:</p></blockquote><blockquote><p>1.Unique – tokens are specific to GitHub and can be generated per use or per device</p></blockquote><blockquote><p>2.Revocable – tokens can can be individually revoked at any time without needing to update unaffected credentials</p></blockquote><blockquote><p>3.Limited – tokens can be narrowly scoped to allow only the access necessary for the use case</p></blockquote><blockquote><p>4.Random – tokens are not subject to the types of dictionary or brute force attempts that simpler passwords that you need to remember or enter regularly might be</p></blockquote><p>大概意思就是：<strong>为了保证各位程序员的账户安全，我们已于2021年7月14日禁止大家在git及第三方应用上通过密码授权GitHub。以后将使用token令牌代替密码。</strong><br>（话说能活跃在全球最大同性交友网站的程序猿能有什么秘密值得如此加密。。。）</p><h3 id="2-什么是token令牌？"><a href="#2-什么是token令牌？" class="headerlink" title="2.什么是token令牌？"></a>2.什么是token令牌？</h3><p>token令牌相当于在第三方接口代替你密码的一个玩意，有点像强密码。但是，token令牌并不是只能有唯一一个的。你可以拥有多个令牌，给不同的第三方接口不同的令牌，而每个令牌都被赋予了不同的权限和使用期限。也就是说，在令牌没赋予的权利将不会给第三方接口和git。当然，token令牌在你设定的期限之后，对应的第三方接口和git就需要你重新给一个令牌，否则也无法使用。令牌也可以随时更改权限和删除。</p><h3 id="3-如何申请token令牌？"><a href="#3-如何申请token令牌？" class="headerlink" title="3.如何申请token令牌？"></a>3.如何申请token令牌？</h3><p>登陆你的GitHub（<strong>注意，在github.com登录你的账户时还是用你的密码，不是令牌</strong>) 点击头像。随后点击settings。</p><p><img src="https://i.postimg.cc/VLBLHGhV/2.png!/scale/50"></p><p>往下拉，你会在左侧看到一个Developer settings。点击它。</p><p><img src="https://i.postimg.cc/1tqy0J6M/31.png"></p><p>左侧有Personal access tokens。点击它。</p><p><img src="https://i.postimg.cc/RZgCv341/4.png"></p><p>点击右侧generate new token。</p><p><img src="https://i.postimg.cc/sD20t1HC/5.png"></p><p>Note是你令牌的名称（不是令牌密码），随便填一个。</p><p>expiration是令牌有效期限。No expiration代表永久令牌。</p><p>下面是选择相应的权限。一般就选择repo 和delete_repo，其他按需勾选。</p><p>拉到最下面，点击generate token，随后跳出来一个界面，有一串绿底字符串即为你的token令牌。</p><p><img src="https://i.postimg.cc/NQk5NFqj/6.png"></p><p><strong>警告！！在这里你一定要将其复制并保存好！建议新建一个txt文件将令牌放入其中！因为这个令牌只会出现一次，你关闭了这个网页，以后GitHub就再也不会告诉你这个令牌了！妥善保管！</strong>（妥善保管！两情若是久长时，又岂在朝朝暮暮？）</p><p>返回刚才的界面，你可以查看已经创建的token和给予的权限与有效期。你可以随时更改，管理，删除它们（<strong>但是不会显示该令牌</strong>）。</p><p><img src="https://i.postimg.cc/XvhVyTZp/7.png"></p><p>随后回到你的git或第三方接口，账号还是输入你的username(用户名)，password就输入你复制的令牌。随后登陆就成功了。</p><h3 id="果然，全球最大的同性交流网站不是吹的，大七夕节非得找个伴侣，它要过七夕谁也拦不住呀！"><a href="#果然，全球最大的同性交流网站不是吹的，大七夕节非得找个伴侣，它要过七夕谁也拦不住呀！" class="headerlink" title="果然，全球最大的同性交流网站不是吹的，大七夕节非得找个伴侣，它要过七夕谁也拦不住呀！"></a>果然，全球最大的同性交流网站不是吹的，大七夕节非得找个伴侣，它要过七夕谁也拦不住呀！</h3>]]></content>
     
@@ -234,6 +238,8 @@
       
     
     
+    
+    <category term="日常经验" scheme="https://billma.top/categories/%E6%97%A5%E5%B8%B8%E7%BB%8F%E9%AA%8C/"/>
     
     
   </entry>

@@ -6,7 +6,7 @@
   <link href="https://billma.top/atom.xml" rel="self"/>
   
   <link href="https://billma.top/"/>
-  <updated>2021-09-13T12:53:08.000Z</updated>
+  <updated>2021-09-27T14:40:56.000Z</updated>
   <id>https://billma.top/</id>
   
   <author>
@@ -15,6 +15,51 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在留言时如何使用Markdown</title>
+    <link href="https://billma.top/2021/09/27/use-markdown/"/>
+    <id>https://billma.top/2021/09/27/use-markdown/</id>
+    <published>2021-09-27T14:27:30.000Z</published>
+    <updated>2021-09-27T14:40:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="0-前言"><a href="#0-前言" class="headerlink" title="0.前言"></a>0.前言</h1><p>本博客现已推出留言板，只要使用github就可以轻松留言。本留言板支持Markdown格式，那么怎么使用呢？</p><h1 id="1-标题行"><a href="#1-标题行" class="headerlink" title="1.标题行"></a>1.标题行</h1><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="section"># 这是一级标题</span></span><br><span class="line"></span><br><span class="line"><span class="section">## 这是二级标题</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 这是三级标题</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 这是四级标题</span></span><br><span class="line"></span><br><span class="line"><span class="section">##### 这是五级标题</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### 这是六级标题</span></span><br><span class="line"></span><br><span class="line"><span class="section">####### 对不起没有七级标题</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>显示结果：</p><h2 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h2><h3 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h3><h4 id="这是三级标题"><a href="#这是三级标题" class="headerlink" title="这是三级标题"></a>这是三级标题</h4><h5 id="这是四级标题"><a href="#这是四级标题" class="headerlink" title="这是四级标题"></a>这是四级标题</h5><h6 id="这是五级标题"><a href="#这是五级标题" class="headerlink" title="这是五级标题"></a>这是五级标题</h6><h6 id="这是六级标题"><a href="#这是六级标题" class="headerlink" title="这是六级标题"></a>这是六级标题</h6><p>####### 对不起没有七级标题</p><p><strong>注意，##后面一定要加一个空格才能再写，否则井号将被显示出来。而且，如果要换行，需要在两行之间空一行才可以。</strong></p><h1 id="2-字体变换"><a href="#2-字体变换" class="headerlink" title="2.字体变换"></a>2.字体变换</h1><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="strong">**这是加粗**</span></span><br><span class="line"></span><br><span class="line"><span class="strong">__这也是加粗(左右各两个下划线）__</span></span><br><span class="line"></span><br><span class="line"><span class="emphasis">*这是斜体*</span></span><br><span class="line"></span><br><span class="line"><span class="emphasis">_这也是斜体_</span></span><br><span class="line"></span><br><span class="line"><span class="strong">**<span class="emphasis">*这是加粗又斜体<span class="strong">**<span class="emphasis">*</span></span></span></span></span><br><span class="line"><span class="emphasis"><span class="strong"><span class="emphasis"><span class="strong"></span></span></span></span></span><br><span class="line"><span class="emphasis"><span class="strong"><span class="emphasis"><span class="strong"><span class="strong">__<span class="emphasis">_左右三个下划线并不能加粗又斜体<span class="strong">__<span class="emphasis">_</span></span></span></span></span></span></span></span></span><br><span class="line"><span class="emphasis"><span class="strong"><span class="emphasis"><span class="strong"><span class="emphasis"><span class="strong"><span class="emphasis"><span class="strong"></span></span></span></span></span></span></span></span></span><br></pre></td></tr></table></figure><p>显示结果：</p><p><strong>这是加粗</strong></p><p><strong>这也是加粗(左右各两个下划线）</strong></p><p><em>这是斜体</em></p><p><em>这也是斜体</em></p><p><em><strong>这是加粗又斜体</strong></em></p><p><em><strong>左右三个下划线并不能加粗又斜体</strong></em></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;0-前言&quot;&gt;&lt;a href=&quot;#0-前言&quot; class=&quot;headerlink&quot; title=&quot;0.前言&quot;&gt;&lt;/a&gt;0.前言&lt;/h1&gt;&lt;p&gt;本博客现已推出留言板，只要使用github就可以轻松留言。本留言板支持Markdown格式，那么怎么使用呢？&lt;/p&gt;
+&lt;h1</summary>
+      
+    
+    
+    
+    <category term="日常经验" scheme="https://billma.top/categories/%E6%97%A5%E5%B8%B8%E7%BB%8F%E9%AA%8C/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>如何使用hexo创建一个完全个性化的</title>
+    <link href="https://billma.top/2021/09/19/how-to-build-up-a-blog/"/>
+    <id>https://billma.top/2021/09/19/how-to-build-up-a-blog/</id>
+    <published>2021-09-19T13:13:52.000Z</published>
+    <updated>2021-09-19T14:32:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="0-前言"><a href="#0-前言" class="headerlink" title="0.前言"></a>0.前言</h1><p>相信很多人都想自己创建一个博客，但是很遗憾，像csdn的博客仅限于一个小圈子里，而且没发自己设置主题；WordPress，blogger等虽然支持个性化，但是没法使用一级域名，加载慢而且还要氪金。所以，使用hexo是很好的选择。</p><h1 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1.准备工作"></a>1.准备工作</h1><h2 id="1-安装git"><a href="#1-安装git" class="headerlink" title="1.安装git"></a>1.安装git</h2><p>git是一款可以提交代码到GitHub(一种全球最大的代码托管平台)的软件。将来你的网页代码就通过它提交至你的网站。</p><p>这里涉及到一个系统问题，你要先知道你系统是32位的还是64位的。如果你不知道你的电脑是32还是64，下载32位的即可（因为64位的是兼容32位的，但是速度较慢）</p><p>如果是64位的，<a href="https://dl.softmgr.qq.com/original/Development/Git-2.33.0.2-64-bit.exe">点击这里下载</a></p><p>如果是32位的，<a href="https://dl.softmgr.qq.com/original/Development/Git-2.33.0.2-32-bit.exe">点击这里下载</a></p><p>安装的时候会有一堆看不懂的东西，全部选择默认就好了。</p><h2 id="2-安装nodejs"><a href="#2-安装nodejs" class="headerlink" title="2.安装nodejs"></a>2.安装nodejs</h2><p>hexo是一个很牛逼的人写的脚本，这玩意可以自动将你写的文章编译成html代码并上传。hexo基于nodejs编写的，所以要安装nodejs。</p><p>Win8/Win8.1/Win10 32位系统:<a href="https://nodejs.org/dist/v14.17.6/node-v14.17.6-x86.msi">clickhere</a></p><p>Win8/Win8.1/Win10 64位系统<a href="https://nodejs.org/dist/v14.17.6/node-v14.17.6-x64.msi">clickhere</a></p><p>Win7 <a href="https://nodejs.org/dist/v12.9.1/node-v12.9.1-x86.msi">点这里下载</a></p><h2 id="3-初始化hexo"><a href="#3-初始化hexo" class="headerlink" title="3.初始化hexo"></a>3.初始化hexo</h2><p>新建一个文件夹blog，打开文件夹后右击，你会惊奇的发现多了一个Git Bash Here。点开，会有一个黑漆漆的窗口。在这里粘贴以下代码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><p>对了，还要再说一下，在这个窗口里，Ctrl+C和Ctrl+V两个快捷键是无法使用的。要粘贴只能右击点击Paste。</p><p>接下来，输入以下代码</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init myblog</span><br><span class="line">cd myblog </span><br><span class="line">npm install</span><br></pre></td></tr></table></figure><p>新建完成后，指定文件夹目录下有：</p><p>node_modules: 依赖包</p><p>public：存放生成的页面</p><p>scaffolds：生成文章的一些模板</p><p>source：用来存放你的文章</p><p>themes：主题</p><p>_config.yml: 博客的配置文件</p><h2 id="4-打开github"><a href="#4-打开github" class="headerlink" title="4.打开github"></a>4.打开github</h2><p><a href="https://github.com/">点击前往github官网</a></p><p>点击Sign up注册账号，Sign in或者login登录。</p><p>随后，新建一个仓库（就是存放你代码的地方）即create new repository</p><p>名称要填写 yourusername.github.io，这样才能激活github的自带github pages功能。</p><p><strong>注意：本篇文章如无特别声明，即将以下关键词替换：</strong></p><table><thead><tr><th>关键词</th><th>替换成</th></tr></thead><tbody><tr><td>yourusername</td><td>你的用户名（不是你的邮箱）</td></tr><tr><td>youremail</td><td>你注册时绑定的邮箱</td></tr><tr><td>yourpassword</td><td>你的密码</td></tr><tr><td>youraccesstoken</td><td>你的token令牌（后面会讲到）</td></tr></tbody></table><p>比如说，我的用户名是billma007，我就把我的新仓库写成 billma007.github.io</p><p>其他替换方法相同。</p><h2 id="5-设置全局账户并绑定github"><a href="#5-设置全局账户并绑定github" class="headerlink" title="5.设置全局账户并绑定github"></a>5.设置全局账户并绑定github</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;yourusername&quot;</span><br><span class="line">git config --global user.email &quot;youremail&quot;</span><br></pre></td></tr></table></figure><p>上面说过了，yourusername替换成你的账号，youremail替换成你的邮箱。记住，要保留引号。</p><p>随后，创建SSH。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure><p>会让你填写东西，不要鸟他，直接一路回车，知道他告诉你已经创建了.ssh文件夹。根据提示打开这个文件夹。</p><p>ssh，简单来讲，就是一个秘钥，其中，id_rsa是你这台电脑的私人秘钥，不能给别人看的，id_rsa.pub是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。</p><p>选择id_rsa.pub，使用记事本打开，复制里面的东西。然后登陆github，在settings里面找到SSH keys，在选择New SSH keys，把你的pub公钥粘贴到里面（title随便填一个）</p><h2 id="6-部署"><a href="#6-部署" class="headerlink" title="6.部署"></a>6.部署</h2><p>点开_config.yml,翻到最后，有以下代码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/yourusername/yourusername.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><p>把yourusername替换掉就好了。</p><p>随后，输入指令：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><p>随后，申请一个Access Token。这一步是所有Hexo教程里面都没有的。因为这是上个月刚刚推出的新功能。如何申请Access Token，<a href="https://billma.top/2021/08/15/github-tokenerror/">戳这里</a></p><p>以后，除了登陆的时候还是用你的密码，其余时候就用你的Access TOken代替你的password。</p><h2 id="7-上传"><a href="#7-上传" class="headerlink" title="7.上传"></a>7.上传</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure><p>其中 hexo clean清除了你之前生成的东西，也可以不加。</p><p>hexo generate 顾名思义，生成静态文章，可以用 hexo g缩写</p><p>hexo deploy 部署文章，可以用hexo d缩写</p><p>注意deploy时可能要你输入username和password。passeord用Access token代替。</p><h1 id="2-配置"><a href="#2-配置" class="headerlink" title="2.配置"></a>2.配置</h1>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;0-前言&quot;&gt;&lt;a href=&quot;#0-前言&quot; class=&quot;headerlink&quot; title=&quot;0.前言&quot;&gt;&lt;/a&gt;0.前言&lt;/h1&gt;&lt;p&gt;相信很多人都想自己创建一个博客，但是很遗憾，像csdn的博客仅限于一个小圈子里，而且没发自己设置主题；WordPress，b</summary>
+      
+    
+    
+    
+    <category term="日常经验" scheme="https://billma.top/categories/%E6%97%A5%E5%B8%B8%E7%BB%8F%E9%AA%8C/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>cxynb</title>

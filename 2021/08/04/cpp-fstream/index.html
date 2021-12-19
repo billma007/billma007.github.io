@@ -2440,7 +2440,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
       <div id="half" class='cover-wrapper post dock' style="display: ;">
         
-  <div class='cover-bg' style='background-image:url(https://i.postimg.cc/90hWh3Mh/chris-ried-ieic5-Tq8-YMk-unsplash.jpg)'></div>
+  <div class='cover-bg lazyload placeholder' data-bg="https://i.postimg.cc/90hWh3Mh/chris-ried-ieic5-Tq8-YMk-unsplash.jpg"></div>
 
 <div class='cover-body'>
   <div class='top'>
@@ -2511,7 +2511,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
   <a itemprop="url" class='author' href="/" rel="nofollow">
-    <img itemprop="image" src="" alt="This is a picture without description" >
+    " class="lazyload" data-srcset="" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==<img itemprop="image" src="" alt="This is a picture without description" >
     <p itemprop="name">Bill Ma</p>
   </a>
 </div>
@@ -2718,7 +2718,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" alt="This is a picture without description" >
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
           
         </a>
       
@@ -2730,7 +2730,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" alt="This is a picture without description" >
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
           
         </a>
       
@@ -2742,7 +2742,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           >
           
-            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" alt="This is a picture without description" >
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
           
         </a>
       
@@ -2951,7 +2951,7 @@ C++ 语言是个十分优秀的语言，但优秀并不表示完美。还是有�
     
       
         <div class='copyright'>
-        <p><a href="/">Copyright © 2017-2020 XXX</a></p>
+        <p><a href="/">Copyright © 2017-2021 Bill Ma</a></p>
 
         </div>
       
@@ -2989,6 +2989,10 @@ C++ 语言是个十分优秀的语言，但优秀并不表示完美。还是有�
 
 <!-- required -->
 
+  
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js"></script>
+
+
 
 <!-- internal -->
 
@@ -2996,8 +3000,8 @@ C++ 语言是个十分优秀的语言，但优秀并不表示完美。还是有�
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1636205446987')
-      volantis.js('/js/message.js?time=1636205446987', () => {
+      volantis.css('/css/message.css?time=1639895791237')
+      volantis.js('/js/message.js?time=1639895791237', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3042,8 +3046,8 @@ C++ 语言是个十分优秀的语言，但优秀并不表示完美。还是有�
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1636205446987')
-      volantis.js('/js/message.js?time=1636205446987', () => {
+      volantis.css('/css/message.css?time=1639895791237')
+      volantis.js('/js/message.js?time=1639895791237', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3102,8 +3106,8 @@ C++ 语言是个十分优秀的语言，但优秀并不表示完美。还是有�
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1636205446987')
-      volantis.js('/js/message.js?time=1636205446987', () => {
+      volantis.css('/css/message.css?time=1639895791237')
+      volantis.js('/js/message.js?time=1639895791237', () => {
         hideMessage(done);
       });
     } else {
@@ -3145,39 +3149,39 @@ C++ 语言是个十分优秀的语言，但优秀并不表示完美。还是有�
   <div id="rightmenu-wrapper">
     <ul class="list-v rightmenu" id="rightmenu-content">
       <li class='navigation menuNavigation-Content'>
-        <a class='nav icon-only fix-cursor-default' onclick='history.back()'><i class=' fa-arrow-left fa-fw'></i></a>
-        <a class='nav icon-only fix-cursor-default' onclick='history.forward()'><i class=' fa-arrow-right fa-fw'></i></a>
-        <a class='nav icon-only fix-cursor-default' onclick='window.location.reload()'><i class=' fa-redo fa-fw'></i></a>
-        <a class='nav icon-only fix-cursor-default' href='/'><i class=' fa-home fa-fw'></i></a>
+        <a class='nav icon-only fix-cursor-default' onclick='history.back()'><i class='fa fa-arrow-left fa-fw'></i></a>
+        <a class='nav icon-only fix-cursor-default' onclick='history.forward()'><i class='fa fa-arrow-right fa-fw'></i></a>
+        <a class='nav icon-only fix-cursor-default' onclick='window.location.reload()'><i class='fa fa-redo fa-fw'></i></a>
+        <a class='nav icon-only fix-cursor-default' href='/'><i class='fa fa-home fa-fw'></i></a>
       </li>
       <li class='option menuOption-Content'>
         <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copyText'>
           
-          <i class=' fa-copy fa-fw'></i> Copy Text
+          <i class='fa fa-copy fa-fw'></i> Copy Text
         </span>
         <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copyPaste'>
           
-          <i class=' fa-paste fa-fw mR12'></i> 粘贴文本
+          <i class='fa fa-paste fa-fw mR12'></i> 粘贴文本
         </span>
         <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copySelect'>
           
-          <i class=' fa-object-ungroup fa-fw mR12'></i> 全选文本
+          <i class='fa fa-object-ungroup fa-fw mR12'></i> 全选文本
         </span>
         <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copyCut'>
           
-          <i class=' fa-cut fa-fw mR12'></i> 剪切文本
+          <i class='fa fa-cut fa-fw mR12'></i> 剪切文本
         </span>
         <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='openTab'>
           
-          <i class=' fa-external-link-square-alt fa-fw mR12'></i> Open Link in New Tab
+          <i class='fa fa-external-link-square-alt fa-fw mR12'></i> Open Link in New Tab
         </span>
         <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copySrc'>
           
-          <i class=' fa-image fa-fw mR12'></i> Copy Image Link
+          <i class='fa fa-image fa-fw mR12'></i> Copy Image Link
         </span>
         <span class='vlts-menu opt fix-cursor-default menu-Option' data-fn-type='copyImg'>
           
-          <i class=' fa-images fa-fw mR12'></i> 复制图片文件
+          <i class='fa fa-images fa-fw mR12'></i> 复制图片文件
         </span>
       </li>
       
@@ -3242,18 +3246,29 @@ C++ 语言是个十分优秀的语言，但优秀并不表示完美。还是有�
   </div>
   <script>
     volantis.rightMenu = {};
-    volantis.rightMenu.faicon = '' || 'fa';
+    volantis.rightMenu.faicon = 'fa' || 'fa';
     
     
       volantis.rightMenu.defaultStyles = true;
     
+    
+      volantis.rightMenu.printJs = true;
+      volantis.rightMenu.printJsFun = () => {
+        try {
+          
+            document.querySelector('article#comments').remove()
+          
+        } catch (error) {
+          console.error(error);
+        }
+      };
     
     
     
     
       volantis.APlayerController = {};
     
-    volantis.js('/js/rightMenu.js?time=1636205446987')
+    volantis.js('/js/rightMenu.js?time=1639895791237')
   </script>
 
 
@@ -3366,19 +3381,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1636205446987")
+        volantis.js("/js/plugins/sites.js?time=1639895791237")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1636205446987")
+        volantis.js("/js/plugins/friends.js?time=1639895791237")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1636205446987")
+        volantis.js("/js/plugins/contributors.js?time=1639895791237")
       }
     
   };
@@ -3390,6 +3405,33 @@ volantis.pjax.push(bindToggleButton);
 </script>
 
 
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 0
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    lazyLoadInstance.update();
+  });
+  document.addEventListener('pjax:complete', function () {
+    lazyLoadInstance.update();
+  });
+</script>
 
 
 
@@ -3494,7 +3536,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1636205446987");
+    return volantis.js("/js/search/hexo.js?time=1639895791237");
   }
 
   function loadSearchService() {

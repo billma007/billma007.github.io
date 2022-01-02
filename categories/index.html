@@ -2767,8 +2767,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1639895790950')
-      volantis.js('/js/message.js?time=1639895790950', () => {
+      volantis.css('/css/message.css?time=1641089594711')
+      volantis.js('/js/message.js?time=1641089594711', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -2813,8 +2813,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1639895790950')
-      volantis.js('/js/message.js?time=1639895790950', () => {
+      volantis.css('/css/message.css?time=1641089594711')
+      volantis.js('/js/message.js?time=1641089594711', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -2873,8 +2873,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1639895790950')
-      volantis.js('/js/message.js?time=1639895790950', () => {
+      volantis.css('/css/message.css?time=1641089594711')
+      volantis.js('/js/message.js?time=1641089594711', () => {
         hideMessage(done);
       });
     } else {
@@ -3035,7 +3035,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       volantis.APlayerController = {};
     
-    volantis.js('/js/rightMenu.js?time=1639895790950')
+    volantis.js('/js/rightMenu.js?time=1641089594711')
   </script>
 
 
@@ -3148,19 +3148,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1639895790950")
+        volantis.js("/js/plugins/sites.js?time=1641089594711")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1639895790950")
+        volantis.js("/js/plugins/friends.js?time=1641089594711")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1639895790950")
+        volantis.js("/js/plugins/contributors.js?time=1641089594711")
       }
     
   };
@@ -3224,65 +3224,45 @@ volantis.pjax.push(bindToggleButton);
 
 
   <script>
-  volantis.layoutHelper("comments",`<div id="beaudar_container"></div>`)
-
-  volantis.beaudar = {};
-
-  function check_beaudar() {
-    if (volantis.dark.mode === "dark") {
-      volantis.beaudar.Theme = 'github-dark';
-    } else {
-      volantis.beaudar.Theme = 'github-light';
+  volantis.layoutHelper("comments",`<div id="valine_container"><i class="fas fa-cog fa-spin fa-fw fa-2x"></i></div>`)
+  function emoji(path, idx, ext) {
+    return path + "/" + path + "-" + idx + "." + ext;
+  }
+  var emojiMaps = {};
+  for (var i = 1; i <= 54; i++) {
+    emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
+  }
+  for (var i = 1; i <= 101; i++) {
+    emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
+  }
+  for (var i = 1; i <= 116; i++) {
+    emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
+  }
+  for (var i = 1; i <= 125; i++) {
+    emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
+  }
+  for (var i = 1; i <= 4; i++) {
+    emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
+  }
+  function pjax_valine() {
+    if(!document.querySelectorAll("#valine_container")[0])return;
+    let pagePlaceholder = pdata.commentPlaceholder || "快来评论吧~";
+    let path = pdata.commentPath;
+    if (path.length == 0) {
+      let defaultPath = '';
+      path = defaultPath || decodeURI(window.location.pathname);
     }
-
-    return document.getElementById("beaudar_container");
+    var valine = new Valine();
+    valine.init(Object.assign(Object.assign({"path":null,"placeholder":"快来评论吧~","appId":"R633uHhCjn8wItkfBI3uVEEs-gzGzoHsz","appKey":"KML1N1wteK9N9LcDXckjlxlu","meta":["nick","mail","link"],"requiredFields":["nick","mail"],"enableQQ":true,"recordIP":true,"avatar":"robohash","pageSize":10,"lang":"zh-cn","highlight":true,"mathJax":false,"js":"https://cdn.jsdelivr.net/npm/valine@1.4/dist/Valine.min.js"}, {
+      el: '#valine_container',
+      path: path,
+      placeholder: pagePlaceholder,
+      emojiCDN: 'https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/valine/',
+      emojiMaps: emojiMaps,
+    }),pdata.commentConfig))
   }
-
-  function pjax_beaudar() {
-    const HEAD = check_beaudar();
-    if (!HEAD) return;
-
-    const script = document.createElement('script');
-    let issuenumber = "";
-    if (issuenumber) {
-      script.setAttribute('issue-number', issuenumber);
-    } else {
-      script.setAttribute('issue-term', "pathname");
-    }
-    script.setAttribute('src', 'https://beaudar.lipk.org/client.js');
-    script.setAttribute('repo', 'billma007/comment');
-    script.setAttribute('input-position', 'top');
-    script.setAttribute('branch', 'main');
-    script.setAttribute('comment-order', 'desc');
-    script.setAttribute('label', '✨💬✨');
-    script.setAttribute('theme', volantis.beaudar.Theme);
-    script.setAttribute('crossorigin', "anonymous");
-    HEAD.appendChild(script);
-  }
-
-  function dark_beaudar() {
-    const HEAD = check_beaudar();
-    if (!HEAD) return;
-
-    const message = {
-      type: 'set-theme',
-      theme: volantis.beaudar.Theme
-    };
-    const beaudarIframe = document.querySelector('iframe');
-    beaudarIframe.contentWindow.postMessage(message, 'https://beaudar.lipk.org');
-  }
-  
-  function check_beaudar_style() {
-    // Beaudar 会往 HEAD 的首节点追加样式元素，而这个追加没有添加判断
-    // 所以 Pjax 下会多次添加样式文件，略微麻烦。
-    const checkStyle = document.querySelector('head').firstElementChild;
-    if(checkStyle.innerText.includes('beaudar')) checkStyle.remove();
-  }
-  
-  pjax_beaudar();
-  volantis.pjax.push(check_beaudar_style);
-  volantis.pjax.push(pjax_beaudar);
-  volantis.dark.push(dark_beaudar);
+  volantis.js('https://cdn.jsdelivr.net/npm/valine@1.4/dist/Valine.min.js').then(pjax_valine)
+  volantis.pjax.push(pjax_valine);
 </script>
 
 
@@ -3303,7 +3283,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1639895790950");
+    return volantis.js("/js/search/hexo.js?time=1641089594711");
   }
 
   function loadSearchService() {

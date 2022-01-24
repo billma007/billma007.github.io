@@ -2467,6 +2467,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg' alt="This is a picture without description" ><p>博客</p>
             </a>
           
+            <a href="/about/"
+              
+              
+              active-action="action-about">
+              <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f396.svg' alt="This is a picture without description" ><p>关于</p>
+            </a>
+          
+            <a href="/about/station/"
+              
+              
+              active-action="action-aboutstation">
+              <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f389.svg' alt="This is a picture without description" ><p>站点</p>
+            </a>
+          
         
       </div>
     </div>
@@ -2487,6 +2501,62 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <section class="post-list">
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://billma.top/2021/08/29/cpp-if-else-question-1/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Bill Ma's Blog">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2021/08/29/cpp-if-else-question-1/"  itemprop="url">
+        今日编程发现--缩进问题
+      </a>
+    </h2>
+  
+  <div class='md' itemprop="articleBody">
+    
+      
+        今天偶然看到一段代码是这么写的：
+1234if(...)    if(...)        ...  else ...
+
+那么问题来了，这么缩进这个else跟的是谁呢？
+其实根据C++原则，else跟的是离他更近的那个if。但是，如果别欣赏这段代码的时候，那可真的难为人家了。
+所以，严格按照语法编代码，保持KISS(Keep it simple,stupid)是最基本的原则。不要写容易混淆...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2021-08-29T16:11:52+08:00">2021-08-29</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2021/08/29/cpp-if-else-question-1/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -3026,69 +3096,6 @@ main.c
           </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://billma.top/2021/08/01/cpp-string/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Bill Ma's Blog">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/08/01/cpp-string/"  itemprop="url">
-        C++ 中string用法详解
-      </a>
-    </h2>
-  
-  <div class='md' itemprop="articleBody">
-    
-      
-        本文根据 CC BY-NC-SA 4.0 许可协议参考Nicolai M.Josuttis的文章并进行小部分转载
-
-C++ 语言是个十分优秀的语言，但优秀并不表示完美。还是有许多人不愿意使用C或者C++，为什么？原因众多，其中之一就是C/C++的文本处理功能太麻烦，用起来很不方便。
-举例来说，如果文本格式是：用户名 电话号码，文件名name.txt
-12345Tom 23245332 Jen...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-08-01T07:26:08+08:00">2021-08-01</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/">编程算法</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/" itemprop="url"><span itemprop="name">编程算法</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/08/01/cpp-string/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
     
   </section>
   
@@ -3224,7 +3231,7 @@ C++ 语言是个十分优秀的语言，但优秀并不表示完美。还是有�
           <li><a class="flat-box"
             title="/categories/%E7%B2%BE%E5%8D%8E%E8%BD%AC%E8%BD%BD/" href="/categories/%E7%B2%BE%E5%8D%8E%E8%BD%AC%E8%BD%BD/"
             active-action="action-categoriesE7B2BEE58D8EE8BDACE8BDBD"
-            ><div class='name'>精华转载</div><div class='badge'>(1)</div></a></li>
+            ><div class='name'>精华转载</div><div class='badge'>(2)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/" href="/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"
@@ -3423,8 +3430,8 @@ C++ 语言是个十分优秀的语言，但优秀并不表示完美。还是有�
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1641089594774')
-      volantis.js('/js/message.js?time=1641089594774', () => {
+      volantis.css('/css/message.css?time=1642774849432')
+      volantis.js('/js/message.js?time=1642774849432', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3469,8 +3476,8 @@ C++ 语言是个十分优秀的语言，但优秀并不表示完美。还是有�
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1641089594774')
-      volantis.js('/js/message.js?time=1641089594774', () => {
+      volantis.css('/css/message.css?time=1642774849432')
+      volantis.js('/js/message.js?time=1642774849432', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3529,8 +3536,8 @@ C++ 语言是个十分优秀的语言，但优秀并不表示完美。还是有�
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1641089594774')
-      volantis.js('/js/message.js?time=1641089594774', () => {
+      volantis.css('/css/message.css?time=1642774849432')
+      volantis.js('/js/message.js?time=1642774849432', () => {
         hideMessage(done);
       });
     } else {
@@ -3691,7 +3698,7 @@ C++ 语言是个十分优秀的语言，但优秀并不表示完美。还是有�
     
       volantis.APlayerController = {};
     
-    volantis.js('/js/rightMenu.js?time=1641089594774')
+    volantis.js('/js/rightMenu.js?time=1642774849432')
   </script>
 
 
@@ -3804,19 +3811,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1641089594774")
+        volantis.js("/js/plugins/sites.js?time=1642774849432")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1641089594774")
+        volantis.js("/js/plugins/friends.js?time=1642774849432")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1641089594774")
+        volantis.js("/js/plugins/contributors.js?time=1642774849432")
       }
     
   };
@@ -3939,7 +3946,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1641089594774");
+    return volantis.js("/js/search/hexo.js?time=1642774849432");
   }
 
   function loadSearchService() {

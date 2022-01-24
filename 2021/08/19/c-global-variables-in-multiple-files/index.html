@@ -2470,6 +2470,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg' alt="This is a picture without description" ><p>博客</p>
             </a>
           
+            <a href="/about/"
+              
+              
+              active-action="action-about">
+              <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f396.svg' alt="This is a picture without description" ><p>关于</p>
+            </a>
+          
+            <a href="/about/station/"
+              
+              
+              active-action="action-aboutstation">
+              <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f389.svg' alt="This is a picture without description" ><p>站点</p>
+            </a>
+          
         
       </div>
     </div>
@@ -2914,8 +2928,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1641089594753')
-      volantis.js('/js/message.js?time=1641089594753', () => {
+      volantis.css('/css/message.css?time=1642774849354')
+      volantis.js('/js/message.js?time=1642774849354', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -2960,8 +2974,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1641089594753')
-      volantis.js('/js/message.js?time=1641089594753', () => {
+      volantis.css('/css/message.css?time=1642774849354')
+      volantis.js('/js/message.js?time=1642774849354', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3020,8 +3034,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1641089594753')
-      volantis.js('/js/message.js?time=1641089594753', () => {
+      volantis.css('/css/message.css?time=1642774849354')
+      volantis.js('/js/message.js?time=1642774849354', () => {
         hideMessage(done);
       });
     } else {
@@ -3182,7 +3196,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       volantis.APlayerController = {};
     
-    volantis.js('/js/rightMenu.js?time=1641089594753')
+    volantis.js('/js/rightMenu.js?time=1642774849354')
   </script>
 
 
@@ -3295,19 +3309,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1641089594753")
+        volantis.js("/js/plugins/sites.js?time=1642774849354")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1641089594753")
+        volantis.js("/js/plugins/friends.js?time=1642774849354")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1641089594753")
+        volantis.js("/js/plugins/contributors.js?time=1642774849354")
       }
     
   };
@@ -3430,7 +3444,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1641089594753");
+    return volantis.js("/js/search/hexo.js?time=1642774849354");
   }
 
   function loadSearchService() {

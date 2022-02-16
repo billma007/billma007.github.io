@@ -47,7 +47,7 @@ html {
   color: var(--color-text);
   width: 100%;
   height: 100%;
-  font-family: Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
   font-size: 16px;
 }
 html >::-webkit-scrollbar {
@@ -361,7 +361,7 @@ button {
   margin-top: 32px;
 }
 .cover-wrapper .cover-body .title {
-  font-family: Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
   font-size: 3.125rem;
   line-height: 1.2;
   text-shadow: 0 1px 2px rgba(0,0,0,0.1);
@@ -627,53 +627,34 @@ button {
 .cover-wrapper.focus .menu .list-h a:hover {
   background: var(--color-card);
 }
-.cover-wrapper.dock .top {
-  margin-bottom: 48px;
+.cover-wrapper.focus .menu {
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
 }
-.cover-wrapper.dock .menu {
+.cover-wrapper.focus .menu .list-h {
+  margin: 2px;
+}
+.cover-wrapper.focus .menu:hover {
   background: rgba(255,255,255,0.5);
-  position: absolute;
-  bottom: 0;
-  max-width: 100%;
-}
-.cover-wrapper.dock .menu .list-h {
-  flex-wrap: nowrap;
-  -webkit-flex-wrap: nowrap;
-  -khtml-flex-wrap: nowrap;
-  -moz-flex-wrap: nowrap;
-  -o-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  margin: 4px;
-}
-.cover-wrapper.dock .menu .list-h a+a {
-  margin-left: 4px;
-}
-@media screen and (max-width: 500px) {
-  .cover-wrapper.dock .menu .list-h {
-    overflow-x: scroll;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar {
-    height: 0;
-    width: 0;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-track-piece {
-    background: transparent;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb {
-    background: #44d7b6;
-    cursor: pointer;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb:hover {
-    background: #ff5722;
-  }
 }
 @supports (backdrop-filter: blur(20px)) {
-  .cover-wrapper.dock .menu {
+  .cover-wrapper.focus .menu:hover {
     background: rgba(255,255,255,0.5);
     backdrop-filter: saturate(200%) blur(20px);
   }
+}
+.cover-wrapper.focus .menu .list-h a {
+  margin: 2px;
+}
+.cover-wrapper.focus .menu .list-h a:hover {
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  background: var(--color-card);
 }
 .cover-wrapper #parallax-window {
   position: absolute;
@@ -887,15 +868,15 @@ button {
   }
 }
 @font-face {
-  font-family: 'Dosis';
-  src: url("https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts@20.5.30/Dosis/Dosis-Medium.ttf");
+  font-family: 'UbuntuMono';
+  src: url("https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
 }
 @font-face {
-  font-family: 'Dosis';
-  src: url("https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts@20.5.30/Dosis/Dosis-Medium.ttf");
+  font-family: 'Varela Round';
+  src: url("https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
@@ -1018,7 +999,7 @@ button {
   line-height: 64px;
   padding: 0 24px;
   font-size: 1.25rem;
-  font-family: Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
 }
 .l_header #wrapper .nav-main .title img {
   height: 64px;
@@ -1029,7 +1010,7 @@ button {
 }
 .l_header .nav-sub .title {
   font-weight: bold;
-  font-family: Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
   line-height: 1.2;
   max-height: 64px;
   white-space: normal;

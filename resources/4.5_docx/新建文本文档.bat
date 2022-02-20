@@ -1,0 +1,1 @@
+for %%i in (*) do (pandac -i %%i -o %%i.pdf) 

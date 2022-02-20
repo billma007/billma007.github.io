@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://billma.top/2021/08/26/cpp-constructor-exception/"/>
+  <link rel="canonical" href="https://billma.top/resources/"/>
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
@@ -25,18 +25,16 @@
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
-  <title>C++ 中如何处理错误和异常？ - Bill Ma's Blog</title>
+  <title>resources - Bill Ma's Blog</title>
   <meta name="keywords" content="null">
-  <meta name="description" content="1.前言用C++写代码的时候总是避免不了处理错误，一般来说有两种方式，通过函数的返回值或者抛出异常。C语言的错误处理一律是通过函数的返回值来判断的，一般是返回0、NULL或者-1表示错误，或者直接返回错误代码，具体是哪种方式没有统一的规定，各种API也各有各的偏好。譬如fopen函数，当成功时返回文件指针，失败时返回NULL，而POSIX标准的open函数则在成功时返回0或者正数，失败时返回-1，">
-<meta property="og:type" content="article">
-<meta property="og:title" content="C++ 中如何处理错误和异常？">
-<meta property="og:url" content="https://billma.top/2021/08/26/cpp-constructor-exception/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="resources">
+<meta property="og:url" content="https://billma.top/resources/index.html">
 <meta property="og:site_name" content="Bill Ma&#39;s Blog">
-<meta property="og:description" content="1.前言用C++写代码的时候总是避免不了处理错误，一般来说有两种方式，通过函数的返回值或者抛出异常。C语言的错误处理一律是通过函数的返回值来判断的，一般是返回0、NULL或者-1表示错误，或者直接返回错误代码，具体是哪种方式没有统一的规定，各种API也各有各的偏好。譬如fopen函数，当成功时返回文件指针，失败时返回NULL，而POSIX标准的open函数则在成功时返回0或者正数，失败时返回-1，">
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2021-08-26T08:13:08.000Z">
-<meta property="article:modified_time" content="2021-09-04T13:03:22.000Z">
+<meta property="article:published_time" content="2022-02-19T13:58:35.000Z">
+<meta property="article:modified_time" content="2022-02-19T13:58:35.898Z">
 <meta property="article:author" content="Bill Ma">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
@@ -2387,7 +2385,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper post focus' style="display: ;">
+      <div id="half" class='cover-wrapper page focus' style="display: ;">
         
   <div id="parallax-window"></div>
 
@@ -2462,8 +2460,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://billma.top/2021/08/26/cpp-constructor-exception/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-page" id="page" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://billma.top/resources/index.html">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Bill Ma's Blog">
   </span>
@@ -2480,7 +2478,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        C++ 中如何处理错误和异常？
+        resources
       </h1>
       <div class='new-meta-box'>
         
@@ -2497,24 +2495,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
             
-  <div class='new-meta-item category'>
-    <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-    <a class="category-link" href="/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/">编程算法</a>
-    
-      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-        <a href="/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/" itemprop="url"><span itemprop="name">编程算法</span></a>
-      </span>
-    
-  </div>
-
 
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-08-26T16:13:08+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-02-19T21:58:35+08:00">
   <a class='notlink' href="/" onclick="return false;" title="Click me!" >
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Aug 26, 2021</p>
+    <p>发布于：Feb 19, 2022</p>
   </a>
 </div>
 
@@ -2525,7 +2513,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item browse leancloud">
     <a class='notlink' href="/" onclick="return false;" title="Click me!" >
       
-      <div id="lc-pv" data-title="C++ 中如何处理错误和异常？" data-path="/2021/08/26/cpp-constructor-exception/">
+      <div id="lc-pv" data-title="resources" data-path="/resources/">
         <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -2546,73 +2534,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h2><div class="story post-story"><p>用C++写代码的时候总是避免不了处理错误，一般来说有两种方式，通过函数的返回值或者抛出异常。C语言的错误处理一律是通过函数的返回值来判断的，一般是返回0、NULL或者-1表示错误，或者直接返回错误代码，具体是哪种方式没有统一的规定，各种API也各有各的偏好。譬如fopen函数，当成功时返回文件指针，失败时返回NULL，而POSIX标准的open函数则在成功时返回0或者正数，失败时返回-1，然后需要再通过全局变量errno来判断具体错误是什么，配套的还有一系列perror、strerror这样的函数。</p>
-</div><h2 id="2-C-的错误处理方式"><a href="#2-C-的错误处理方式" class="headerlink" title="2.C++的错误处理方式"></a>2.C++的错误处理方式</h2><div class="story post-story"><p>C++号称向下兼容C语言，于是就将C语言通过返回值的错误处理方式也搬了进来。但C++最大的不同是引入了异常机制，可以用throw产生一个异常，并通过try和catch来捕获。于是就混乱了，到底是什么时候使用返回值表示错误，什么时候使用异常呢？首先简单谈论一下异常和返回值的特点。</p>
-<h3 id="异常的优点"><a href="#异常的优点" class="headerlink" title="异常的优点"></a>异常的优点</h3><p>错误信息丰富，便于获得错误现场</p>
-<p>代码相对简短，不需要判断每个函数的返回值</p>
-<h3 id="异常的缺点"><a href="#异常的缺点" class="headerlink" title="异常的缺点"></a>异常的缺点</h3><p>使控制流变得复杂，难以追踪</p>
-<p>开销相对较大</p>
-<h3 id="返回值的优点"><a href="#返回值的优点" class="headerlink" title="返回值的优点"></a>返回值的优点</h3><p>性能开销相对小</p>
-<p>避免定义异常类</p>
-<h3 id="返回值的缺点"><a href="#返回值的缺点" class="headerlink" title="返回值的缺点"></a>返回值的缺点</h3><p>程序员经常「忘记」处理错误返回值</p>
-<p>每个可能产生错误的函数在调用后都需要判断是否有错误</p>
-<p>与「真正的」返回值混用，需要规定一个错误代码（通常是0、-1或NULL）<br>使用异常还是返回值</p>
-<p>我的观点是，用异常来表示真正的、而且不太可能发生的错误。所谓不太可能发生的错误，指的是真正难以预料，但发生了却又不得不单独处理的，譬如内存耗尽、读文件发生故障。而在一个字符串中查找一个子串，如果没有找到显然应该是用一个特殊的返回值（如-1），而不应该抛出一个异常。</p>
-<p>一句话来概况就是不要用异常代替正常的控制流，只有当程序真的「不正常」的时候，才使用异常。反过来说，当程序真正发生错误了，一定要使用异常而不是返回一个错误代码，因为错误代码总是倾向于被忽略。如果要保证一个以返回值来表示错误代码的函数的错误正确地向上传递，需要在每个调用了可能产生错误的函数后面都判断一下是否发生了错误，一旦发生了不可解决的错误，就要终止当前函数（并释放当前函数申请的资源），然后向上传递错误。这样一来错误处理代码会被重复地写好几遍，十分冗杂，譬如下面代码：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">func</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> fd = <span class="built_in">open</span>(<span class="string">&quot;path/to/file&quot;</span>, O_RDONLY);</span><br><span class="line">  <span class="keyword">if</span> (fd == <span class="number">-1</span>) &#123;</span><br><span class="line">     <span class="keyword">return</span> ERROR_OPEN;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">int</span>* array = <span class="keyword">new</span>[n];</span><br><span class="line">  <span class="keyword">int</span> err;</span><br><span class="line">  err = <span class="built_in">do_something</span>(fd, array);</span><br><span class="line">  <span class="keyword">if</span> (err != SUCCESS) &#123;</span><br><span class="line">     <span class="keyword">delete</span>[] array;</span><br><span class="line">     <span class="keyword">return</span> err;</span><br><span class="line">  &#125;</span><br><span class="line">  err = <span class="built_in">do_other_thing</span>();</span><br><span class="line">  <span class="keyword">if</span> (err != SUCCESS) &#123;</span><br><span class="line">     <span class="keyword">delete</span>[] array;</span><br><span class="line">     <span class="keyword">return</span> err;</span><br><span class="line">  &#125;</span><br><span class="line">  err = <span class="built_in">do_more_thing</span>();</span><br><span class="line">  <span class="keyword">if</span> (err != SUCCESS) &#123;</span><br><span class="line">     <span class="keyword">delete</span>[] array;</span><br><span class="line">     <span class="keyword">return</span> err;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">delete</span>[] array;</span><br><span class="line">  <span class="keyword">return</span> SUCCESS;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    
 
-<p>对使用异常容易增加函数出口的指控其实是不成立的，因为即使使用返回值，这些出口也是免不了的，除非程序员有意或无意忽略掉，但异常是不可忽略的。如果你认为可以把判断错误的if语句缩写到一行使代码变得「更清晰」，那么我只能说是自欺欺人。</p>
-<p>有些错误几乎总是可以被立即恢复（譬如前面所说的查找一个字符串不存在的子串，甚至都不能说这是一个「错误」），而且返回值本身就传递一定信息，就不需要使用异常了。</p>
-<p>鉴于C++没有统一的ABI，并不建议在模块的接口上使用异常。如果要使用，就要把可能曝露给用户的异常全部声明出来，不要把其他类型的异常丢给用户去处理，尤其是内部状态——模块的使用者通常也不会关心模块内部具体是哪条语句发生错误了。</p>
-</div><h2 id="3-构造函数中的错误"><a href="#3-构造函数中的错误" class="headerlink" title="3.构造函数中的错误"></a>3.构造函数中的错误</h2><div class="story post-story"><p>有一个相当实际的问题是，如何处理构造函数的错误？我们都知道构造函数是没有返回值的，怎么办呢？通常有三种常见的处理方法，标记错误状态、使用一个额外的initialize函数来初始化，或者直接抛出异常。</p>
-<p>合格的C++程序员都知道C++的析构函数中不应该抛出异常，一旦析构函数中的异常没有被捕获，整个程序都要被中止掉。于是许多人就对在构造函数中抛出异常也产生了对等的恐惧，宁可使用一个额外的初始化函数在里面初始化对象的状态并抛出异常（或者返回错误代码）。这样做违背了对象产生和初始化要在一起的原则，强迫用户记住调用一个额外的初始化函数，一旦没有调用直接使用了其他函数，其行为很可能是未定义的。</p>
-<p>使用初始化函数的惟一好处可能是避免了手动释放资源（释放资源的操作交给析构函数来做），因为C++的一个特点是构造函数抛出异常以后析构函数是不会被调用的，所以如果你在构造函数里面申请了内存或者打开了资源，需要在异常产生时关闭。但想想看其实并不能完全避免，因为有些资源可能是要在可能产生错误的函数调用过后才被申请的，还是无法完全避免手工的释放。</p>
-<p>标记错误状态也是一种常见的形式，譬如STL中的ifstream类，当构造时传入一个无法访问的文件作为参数，它不会返回任何错误，而是标记的内部状态为不可用，用户需要手工通过is_open()函数来判断是否打开成功了。同时它还有good()、fail()两个函数，同时也重载了bool类型转换运算符用于在if语句中判断。标记状态的方法在实践中相当丑陋，因为在使用前总是需要判断它是否「真的创建成功了」。</p>
-<p>最直接的方法还是在构造函数中抛出异常，它并不会向析构函数中抛出异常那样有严重的后果，只是需要注意的是抛出异常以后对象没有被创建成功，析构函数也不会被调用，所以应该自行把申请的资源全部都释放掉。</p>
-</div><h2 id="4-如何在构造函数中捕获异常"><a href="#4-如何在构造函数中捕获异常" class="headerlink" title="4.如何在构造函数中捕获异常"></a>4.如何在构造函数中捕获异常</h2><div class="story post-story"><p>构造函数与普通函数有一个很不一样特性，就是构造函数可以有初始化列表，例如下面的代码：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">B</span> &#123;</span></span><br><span class="line"> <span class="keyword">public</span>:</span><br><span class="line">  <span class="built_in">B</span>(<span class="keyword">int</span> val) : <span class="built_in">val_</span>(val * val) &#123;</span><br><span class="line">  &#125;</span><br><span class="line"> <span class="keyword">private</span>:</span><br><span class="line">  <span class="keyword">int</span> val_;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> &#123;</span></span><br><span class="line"> <span class="keyword">public</span>:</span><br><span class="line">  <span class="built_in">A</span>(<span class="keyword">int</span> val) : <span class="built_in">b_</span>(val) &#123;</span><br><span class="line">    a_ = val;</span><br><span class="line">  &#125;</span><br><span class="line"> <span class="keyword">private</span>:</span><br><span class="line">  <span class="keyword">int</span> a_;</span><br><span class="line">  B b_;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>以上的代码中A的构造函数的函数体的语句在执行之前会先调用B的构造函数，这时候问题在于，如果B的构造函数抛出了异常，A该如何捕获呢？一个迂回的做法是在A中把B的实例声明为指针，在构造函数和析构函数中分别创建和删除，这样就能捕获到异常了。不过，实际上是有更简单的做法的。下面我要介绍一个C++的很不常见的语法：函数作用域级别的异常捕获。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">B</span> &#123;</span></span><br><span class="line"> <span class="keyword">public</span>:</span><br><span class="line">  <span class="built_in">B</span>(<span class="keyword">int</span> val) : <span class="built_in">val_</span>(val * val) &#123;</span><br><span class="line">    <span class="keyword">throw</span> <span class="built_in">runtime_error</span>(<span class="string">&quot;wtf from B&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line"> <span class="keyword">private</span>:</span><br><span class="line">  <span class="keyword">int</span> val_;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> &#123;</span></span><br><span class="line"> <span class="keyword">public</span>:</span><br><span class="line">  <span class="built_in">A</span>(<span class="keyword">int</span> val) <span class="keyword">try</span> : <span class="built_in">b_</span>(val) &#123;</span><br><span class="line">    a_ = val;</span><br><span class="line">  &#125; <span class="built_in"><span class="keyword">catch</span></span> (runtime_error&amp; e) &#123;</span><br><span class="line">    cerr &lt;&lt; e.<span class="built_in">what</span>() &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">throw</span> <span class="built_in">runtime_error</span>(<span class="string">&quot;wtf from A&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line"> <span class="keyword">private</span>:</span><br><span class="line">  <span class="keyword">int</span> a_;</span><br><span class="line">  B b_;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>注意上面A的构造函数，在参数列表后和初始化列表前增加了try关键字，然后构造函数就被分割为了两部分，前面是初始化，后面是初始化时的错误处理。需要指出的是，catch块里面捕获到的异常不能被忽略，即catch块中必须有一个throw语句重新抛出异常，如果没有，则默认会将原来捕获到的异常重新抛出，这和一般的行为是不同的。例如下面代码运行可以发现A会将捕获到的异常原封不动抛出：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> &#123;</span></span><br><span class="line"> <span class="keyword">public</span>:</span><br><span class="line">  <span class="built_in">A</span>(<span class="keyword">int</span> val) <span class="keyword">try</span> : <span class="built_in">b_</span>(val) &#123;</span><br><span class="line">    a_ = val;</span><br><span class="line">  &#125; <span class="built_in"><span class="keyword">catch</span></span> (runtime_error&amp; e) &#123;</span><br><span class="line">    cerr &lt;&lt; e.<span class="built_in">what</span>() &lt;&lt; endl;</span><br><span class="line">  &#125;</span><br><span class="line"> <span class="keyword">private</span>:</span><br><span class="line">  <span class="keyword">int</span> a_;</span><br><span class="line">  B b_;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>这种语法是C++的标准，而且目前已经被所有的主流C++编译器支持（VS2010、g++ 4.2、clang 3.1），所以几乎不存在兼容性问题，大可放心使用。</p>
-</div><h2 id="5-其他语言中的错误处理"><a href="#5-其他语言中的错误处理" class="headerlink" title="5.其他语言中的错误处理"></a>5.其他语言中的错误处理</h2><div class="story post-story"><p>Java倾向于大量使用异常，而且还把异常分为了两类分别是检查型异常(Checked Exception)和非检查型异常(Unchecked Exception)，检查型异常就是java.lang.Exception的子类，用于报告需要检查的错误，也就是正常的业务逻辑，错误主要是由用户产生的，方便恢复或给出提示，譬如打开不存在的文件。而非检查型异常则是真正的系统异常，通常由软件缺陷导致，如数组下标越界、错误的类型转换等，这类异常继承于java.lang.RuntimeException或java.lang.Error。</p>
-<p>Python和Java一样也倾向于使用异常，并不一定真的发生故障才抛出异常，譬如字符串转换为整数，如果字符串不合法，Python会抛出一个ValueError异常。甚至Python的迭代器在调用next()时没有更多的结果时会抛出StopIteration 异常。这是典型的用异常来处理正常控制流的方法，在Python中被广泛使用。按照优秀C++代码的标准来看，这是典型的对异常的滥用，既复杂又有额外开销，不推荐使用，但在Python中这是一个广泛遵循的约定。</p>
-<p>相较于Java和Python，Go的错误处理是另一个极端，Go语言则根本没有异常的概念，而是普遍采用返回值的方式来表示错误，同时还提供了panic和recover语法。由于Go有多返回值的特性，避免了错误代码占用返回结果的弊端，所以你可以经常看到函数的最后一个返回值是error类型。由于总是用返回值传递错误，你可以看到Go代码中耦合了大量的错误处理，几乎再每条函数调用语句之后都有一个判断错误是否发生的语句。panic和recover机制十分类似于异常，程序在遇到panic时会一层一层退出调用栈，直到遇到recover。不过recover只在defer中定义，相当于一个函数只有一个recover，而且被recover恢复后会回到错误发生处继续向下执行代码。Go语言倾向于把一般错误都作为返回值传递，除非是非常可怕的、除了重置状态几乎无法恢复错误才会被panic语句抛出。</p>
-<p>Go语言的recover机制和异常比起来，反倒更像Visual Basic语言中的On Error GoTo label及Resume语法。这是一种非结构化的错误处理方式，具体是当声明有On Error GoTo label的函数发生错误以后，会调转到对应的行号，如果再遇到了Resume语句就会返回发生错误的语句后面的一条继续执行，例如下面这段代码：</p>
-<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Sub</span> ErrorDemo</span><br><span class="line">    <span class="keyword">On</span> <span class="keyword">Error</span> <span class="keyword">GoTo</span> ErrorHandler</span><br><span class="line">    <span class="keyword">Dim</span> a <span class="keyword">as</span> <span class="type">Integer</span></span><br><span class="line">    a = <span class="number">1</span>/<span class="number">0</span> <span class="comment">&#x27; An error occurs.</span></span><br><span class="line">    Print a <span class="comment">&#x27; Go back here</span></span><br><span class="line">    <span class="keyword">Exit</span> <span class="keyword">Sub</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">ErrorHandler:</span></span><br><span class="line">    <span class="comment">&#x27; Code that handles errors.</span></span><br><span class="line">    <span class="keyword">Resume</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br></pre></td></tr></table></figure>
-
-<p>Visual Basic中还有On Error Resume Next这样的万能错误处理语句，即遇到错误以后直接忽略并继续执行，这是一种非常危险而且不负责任的做法，但却可以在早期的Visual Basic代码中到处看到。事实上用返回值传递错误代码的时候许多人也并不处理而是直接忽略，这跟On Error Resume Next本质上没有什么区别，却比On Error Resume Next危害更大——因为On Error Resume Next至少还有个标记说明「老子就是这么不负责任」，但忽略错误返回值就难以被一眼发现了。</p>
-
-</div>
   </div>
   
-  
-    
-    <div class='footer'>
-      
-      
-      
-        <div class='copyright'>
-          <blockquote>
-            
-              
-                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
-
-              
-            
-              
-                <p>本文永久链接是：<a href=https://billma.top/2021/08/26/cpp-constructor-exception/>https://billma.top/2021/08/26/cpp-constructor-exception/</a></p>
-              
-            
-          </blockquote>
-        </div>
-      
-      
-    </div>
   
   
     
@@ -2622,10 +2547,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2021-09-04T21:03:22+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-02-19T21:58:35+08:00">
   <a class='notlink' href="/" onclick="return false;" title="Click me!" >
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Sep 4, 2021</p>
+    <p>更新于：Feb 19, 2022</p>
   </a>
 </div>
 
@@ -2644,7 +2569,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://billma.top/2021/08/26/cpp-constructor-exception/&title=C++ 中如何处理错误和异常？ - Bill Ma's Blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://billma.top/resources/index.html&title=resources - Bill Ma's Blog&summary="
           
           >
           
@@ -2656,7 +2581,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://billma.top/2021/08/26/cpp-constructor-exception/&title=C++ 中如何处理错误和异常？ - Bill Ma's Blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://billma.top/resources/index.html&title=resources - Bill Ma's Blog&summary="
           
           >
           
@@ -2668,7 +2593,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://billma.top/2021/08/26/cpp-constructor-exception/&title=C++ 中如何处理错误和异常？ - Bill Ma's Blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://billma.top/resources/index.html&title=resources - Bill Ma's Blog&summary="
           
           >
           
@@ -2699,22 +2624,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
   
-    <div class="prev-next">
-      
-        <a class='prev' href='/2021/08/26/cpp-begin-1/'>
-          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>从零开始C++——1</p>
-          <p class='content'>本文为原创文章，请转载时一定要注明作者：Bill Ma，网址https://billma.top
-1This blog is licensed under CC BY-NC-SA 4.0 unl...</p>
-        </a>
-      
-      
-        <a class='next' href='/2021/08/26/lcs-suffix-array/'>
-          <p class='title'>最长公共子串问题的后缀数组<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>最长公共子串最长公共子串(Longest Common Substring ,简称LCS)问题，是指求给定的一组字符串长度最大的共有的子串的问题。例如字符串”abcb”,“bca”,“acbc”...</p>
-        </a>
-      
-    </div>
-  
   <!-- Custom Files postEnd begin-->
   
   <!-- Custom Files postEnd end-->
@@ -2726,7 +2635,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <article class="post white-box reveal shadow" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2021/08/26/cpp-constructor-exception/index.html#comments">
+      <meta itemprop="discussionUrl" content="/resources/index.html#comments">
     </span>
     <p ct><i class='fas fa-comments'></i> 评论</p>
     
@@ -2749,19 +2658,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-  <section class="widget toc-wrapper shadow desktop mobile pjax" id="toc-div" >
-    
-  <header>
-    
-      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
-    
-  </header>
-
-
-    <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">1.前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-C-%E7%9A%84%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86%E6%96%B9%E5%BC%8F"><span class="toc-number">2.</span> <span class="toc-text">2.C++的错误处理方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%82%E5%B8%B8%E7%9A%84%E4%BC%98%E7%82%B9"><span class="toc-number">2.1.</span> <span class="toc-text">异常的优点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%82%E5%B8%B8%E7%9A%84%E7%BC%BA%E7%82%B9"><span class="toc-number">2.2.</span> <span class="toc-text">异常的缺点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%94%E5%9B%9E%E5%80%BC%E7%9A%84%E4%BC%98%E7%82%B9"><span class="toc-number">2.3.</span> <span class="toc-text">返回值的优点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%94%E5%9B%9E%E5%80%BC%E7%9A%84%E7%BC%BA%E7%82%B9"><span class="toc-number">2.4.</span> <span class="toc-text">返回值的缺点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E4%B8%AD%E7%9A%84%E9%94%99%E8%AF%AF"><span class="toc-number">3.</span> <span class="toc-text">3.构造函数中的错误</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%A6%82%E4%BD%95%E5%9C%A8%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E4%B8%AD%E6%8D%95%E8%8E%B7%E5%BC%82%E5%B8%B8"><span class="toc-number">4.</span> <span class="toc-text">4.如何在构造函数中捕获异常</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E5%85%B6%E4%BB%96%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86"><span class="toc-number">5.</span> <span class="toc-text">5.其他语言中的错误处理</span></a></li></ol>
-    </div>
-  </section>
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   
 
@@ -2810,8 +2709,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=true;
-  pdata.postTitle="C++ 中如何处理错误和异常？";
+  pdata.ispage=false;
+  pdata.postTitle="";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2949,8 +2848,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1645324200472')
-      volantis.js('/js/message.js?time=1645324200472', () => {
+      volantis.css('/css/message.css?time=1645324200428')
+      volantis.js('/js/message.js?time=1645324200428', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -2995,8 +2894,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1645324200472')
-      volantis.js('/js/message.js?time=1645324200472', () => {
+      volantis.css('/css/message.css?time=1645324200428')
+      volantis.js('/js/message.js?time=1645324200428', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3055,8 +2954,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1645324200472')
-      volantis.js('/js/message.js?time=1645324200472', () => {
+      volantis.css('/css/message.css?time=1645324200428')
+      volantis.js('/js/message.js?time=1645324200428', () => {
         hideMessage(done);
       });
     } else {
@@ -3274,7 +3173,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
     
-    volantis.js('/js/rightMenu.js?time=1645324200472')
+    volantis.js('/js/rightMenu.js?time=1645324200428')
   </script>
 
 
@@ -3387,19 +3286,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1645324200472")
+        volantis.js("/js/plugins/sites.js?time=1645324200428")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1645324200472")
+        volantis.js("/js/plugins/friends.js?time=1645324200428")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1645324200472")
+        volantis.js("/js/plugins/contributors.js?time=1645324200428")
       }
     
   };
@@ -3471,7 +3370,7 @@ volantis.pjax.push(bindToggleButton);
     await volantis.js("https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('/js/aplayer.js?time=1645324200474')
+    await volantis.js('/js/aplayer.js?time=1645324200429')
     volantis.APlayerController.music = true;
   
   })();
@@ -3612,7 +3511,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1645324200472");
+    return volantis.js("/js/search/hexo.js?time=1645324200428");
   }
 
   function loadSearchService() {
@@ -3909,7 +3808,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -3952,7 +3851,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1645324200472').then(()=>{
+    volantis.js('/js/parallax.js?time=1645324200428').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4146,7 +4045,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Bill Ma's Blog","url":"https://billma.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Bill Ma","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://billma.top/","sameAs":["https://github.com/volantis-x"],"description":"Welcome to Bill Ma's blog!"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://billma.top/","name":"Bill Ma's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://billma.top/categories/编程算法/","name":"编程算法"}},{"@type":"ListItem","position":3,"item":{"@id":"https://billma.top/2021/08/26/cpp-constructor-exception/","name":"C++ 中如何处理错误和异常？"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"C++ 中如何处理错误和异常？","description":"","datePublished":"2021-08-26T08:13:08.000Z","dateModified":"2021-09-04T13:03:22.000Z","inLanguage":"cn","mainEntityOfPage":{"@type":"WebPage","@id":"https://billma.top/2021/08/26/cpp-constructor-exception/"},"author":{"@type":"Person","name":"Bill Ma","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://billma.top/"},"publisher":{"@type":"Organization","name":"Bill Ma's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://billma.top/2021/08/26/cpp-constructor-exception/","wordCount":0,"articleSection":"编程算法","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Bill Ma's Blog","url":"https://billma.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Bill Ma","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://billma.top/","sameAs":["https://github.com/volantis-x"],"description":"Welcome to Bill Ma's blog!"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://billma.top/","name":"Bill Ma's Blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Bill Ma's Blog","url":"https://billma.top/","keywords":null,"description":"Welcome to Bill Ma's blog!","author":{"@type":"Person","name":"Bill Ma","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"https://billma.top/","description":"Welcome to Bill Ma's blog!"},"publisher":{"@type":"Organization","name":"Bill Ma's Blog","url":"https://billma.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://billma.top?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
 
 
 <!-- more -->

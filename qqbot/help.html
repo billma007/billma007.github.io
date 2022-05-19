@@ -36,7 +36,7 @@
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-05-13T02:22:30.000Z">
-<meta property="article:modified_time" content="2022-05-16T04:51:49.103Z">
+<meta property="article:modified_time" content="2022-05-19T01:24:37.653Z">
 <meta property="article:author" content="Bill Ma">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
@@ -2549,33 +2549,51 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </ul>
 </div><h2 id="通用功能"><a href="#通用功能" class="headerlink" title="通用功能"></a>通用功能</h2><div class="story post-story"><p>本机器人有以下通用功能：</p>
 <ul>
-<li><code>.bot rc 一个事件</code>：事件鉴定<ul>
+<li><p><code>.bot rc 一个事件</code>：事件鉴定</p>
+<ul>
 <li>example:<code>.bot rc 明天不下雨</code></li>
 </ul>
 </li>
-<li><code>.bot jrrp (可加人名)</code>：测某人今日人品(不加人名就是测自己)<ul>
+<li><p><code>.bot jrrp (可加人名)</code>：测某人今日人品(不加人名就是测自己)</p>
+<ul>
 <li>example:<code>.bot jrrp 秦富康</code></li>
 </ul>
 </li>
-<li><code>.bot arknights (可加数字)</code>：方舟模拟寻访(不加数字爆率为2%，加数字即代表爆率)<ul>
+<li><p><code>.bot arknights (可加数字)</code>：方舟模拟寻访(不加数字爆率为2%，加数字即代表爆率)</p>
+<ul>
 <li>example:<code>.bot arknights 8</code>意为六星爆率为8%</li>
 </ul>
 </li>
-<li><code>.bot 人生重开</code> ：模拟一次人生重开</li>
-<li><code>.bot 毒鸡汤</code>：随机来一句毒鸡汤</li>
-<li><code>.bot 下载音乐 (歌名)</code>:获取音乐下载链接，支持会员<ul>
+<li><p><code>.bot 人生重开</code> ：模拟一次人生重开</p>
+</li>
+<li><p><code>.bot 毒鸡汤</code>：随机来一句毒鸡汤</p>
+</li>
+<li><p><code>.bot 下载音乐 (歌名)</code>:获取音乐下载链接，支持会员</p>
+<ul>
 <li>example:<code>.bot 下载音乐 周杰伦</code></li>
 </ul>
 </li>
-<li><code>.bot history-today</code> :获取历史上的今天</li>
-<li><code>.bot 狗屁不通 (一个名词)</code>：生成该名词的狗屁不通文章<ul>
+<li><p><code>.bot history-today</code> :获取历史上的今天</p>
+</li>
+<li><p><code>.bot 狗屁不通 (一个名词)</code>：生成该名词的狗屁不通文章</p>
+</li>
+<li><ul>
 <li>example:<code>.bot 狗屁不通 python</code></li>
 </ul>
 </li>
-<li><code>.bot whosays [options]</code>:某人说过，该指令详细用法见下</li>
+<li><p><code>.bot whosays [options]</code>:某人说过，<strong>该指令详细用法见下</strong></p>
+</li>
+<li><p><code>.bot 鲁迅说过</code>：随机输出一句鲁迅名言</p>
+</li>
+<li><p><code>.bot 神回复</code></p>
+</li>
+<li><p><code>.bot 网易云热评</code></p>
+</li>
+<li><p><code>.bot 搞笑语录</code></p>
+</li>
 </ul>
 </div><h2 id="某人说过"><a href="#某人说过" class="headerlink" title="某人说过"></a>某人说过</h2><div class="story post-story"><p>你可以录入、删除、输出某人说过的名言。</p>
-<h3 id="1-录入"><a href="#1-录入" class="headerlink" title="1.录入"></a>1.录入</h3><p>一般来说，你可以通过以下指令录入某人名言：</p>
+<h3 id="录入"><a href="#录入" class="headerlink" title="录入"></a>录入</h3><p>一般来说，你可以通过以下指令录入某人名言：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.bot whosays add sb sth</span><br></pre></td></tr></table></figure>
 
 <p>这样，sb说过的sth就会被录入到数据库。</p>
@@ -2653,11 +2671,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <ul>
 <li><code>.bot signin admin check 12345</code>:查询12345的积分</li>
 <li><code>.bot signin admin add 12345 1000</code>:给12345增加1000个积分</li>
-<li><code>.bot signin admin remove 12345 100</code>:给12345移除100积分<ul>
-<li>注意：如果您remove数大于他实际持有积分数，将不会变成负的，只会保持为0</li>
+<li><code>.bot signin admin remove 12345 100</code>:给12345移除100积分</li>
 </ul>
-</li>
-</ul>
+<blockquote>
+<p>注意：如果您remove数大于他实际持有积分数，将不会变成负的，只会保持为0</p>
+</blockquote>
 </div><h2 id="管理员全局指令"><a href="#管理员全局指令" class="headerlink" title="管理员全局指令"></a>管理员全局指令</h2><div class="story post-story"><p>此外，管理员可以使用以下全局指令管理黑名单：</p>
 <ul>
 <li><code>.bot set blacklist add/delete 12345</code>:将12345加入&#x2F;移除黑名单</li>
@@ -2683,10 +2701,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-16T12:51:49+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-19T09:24:37+08:00">
   <a class='notlink' href="/" onclick="return false;" title="Click me!" >
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：May 16, 2022</p>
+    <p>更新于：May 19, 2022</p>
   </a>
 </div>
 
@@ -2804,7 +2822,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95"><span class="toc-number">1.</span> <span class="toc-text">索引</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%A0%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93"><span class="toc-number">2.</span> <span class="toc-text">你需要知道</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%9A%E7%94%A8%E5%8A%9F%E8%83%BD"><span class="toc-number">3.</span> <span class="toc-text">通用功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%90%E4%BA%BA%E8%AF%B4%E8%BF%87"><span class="toc-number">4.</span> <span class="toc-text">某人说过</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%BD%95%E5%85%A5"><span class="toc-number">4.1.</span> <span class="toc-text">1.录入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%87%BA"><span class="toc-number">4.2.</span> <span class="toc-text">输出</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E5%8A%9F%E8%83%BD"><span class="toc-number">5.</span> <span class="toc-text">查询功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A7%AF%E5%88%86%E7%B3%BB%E7%BB%9F"><span class="toc-number">6.</span> <span class="toc-text">积分系统</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%A1%E7%90%86%E5%91%98%E4%B8%93%E7%94%A8%E6%8C%87%E4%BB%A4"><span class="toc-number">6.1.</span> <span class="toc-text">管理员专用指令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%A1%E7%90%86%E5%91%98%E5%85%A8%E5%B1%80%E6%8C%87%E4%BB%A4"><span class="toc-number">7.</span> <span class="toc-text">管理员全局指令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B6%85%E7%BA%A7%E7%AE%A1%E7%90%86%E5%91%98%E4%B8%93%E7%94%A8%E5%85%A8%E5%B1%80%E6%8C%87%E4%BB%A4"><span class="toc-number">8.</span> <span class="toc-text">超级管理员专用全局指令</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95"><span class="toc-number">1.</span> <span class="toc-text">索引</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%A0%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93"><span class="toc-number">2.</span> <span class="toc-text">你需要知道</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%9A%E7%94%A8%E5%8A%9F%E8%83%BD"><span class="toc-number">3.</span> <span class="toc-text">通用功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%90%E4%BA%BA%E8%AF%B4%E8%BF%87"><span class="toc-number">4.</span> <span class="toc-text">某人说过</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BD%95%E5%85%A5"><span class="toc-number">4.1.</span> <span class="toc-text">录入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%87%BA"><span class="toc-number">4.2.</span> <span class="toc-text">输出</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E5%8A%9F%E8%83%BD"><span class="toc-number">5.</span> <span class="toc-text">查询功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A7%AF%E5%88%86%E7%B3%BB%E7%BB%9F"><span class="toc-number">6.</span> <span class="toc-text">积分系统</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%A1%E7%90%86%E5%91%98%E4%B8%93%E7%94%A8%E6%8C%87%E4%BB%A4"><span class="toc-number">6.1.</span> <span class="toc-text">管理员专用指令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%A1%E7%90%86%E5%91%98%E5%85%A8%E5%B1%80%E6%8C%87%E4%BB%A4"><span class="toc-number">7.</span> <span class="toc-text">管理员全局指令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B6%85%E7%BA%A7%E7%AE%A1%E7%90%86%E5%91%98%E4%B8%93%E7%94%A8%E5%85%A8%E5%B1%80%E6%8C%87%E4%BB%A4"><span class="toc-number">8.</span> <span class="toc-text">超级管理员专用全局指令</span></a></li></ol>
     </div>
   </section>
 
@@ -2994,8 +3012,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1652676803907')
-      volantis.js('/js/message.js?time=1652676803907', () => {
+      volantis.css('/css/message.css?time=1652965393960')
+      volantis.js('/js/message.js?time=1652965393960', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3040,8 +3058,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1652676803907')
-      volantis.js('/js/message.js?time=1652676803907', () => {
+      volantis.css('/css/message.css?time=1652965393960')
+      volantis.js('/js/message.js?time=1652965393960', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3100,8 +3118,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1652676803907')
-      volantis.js('/js/message.js?time=1652676803907', () => {
+      volantis.css('/css/message.css?time=1652965393960')
+      volantis.js('/js/message.js?time=1652965393960', () => {
         hideMessage(done);
       });
     } else {
@@ -3302,7 +3320,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
     
-    volantis.js('/js/rightMenu.js?time=1652676803907')
+    volantis.js('/js/rightMenu.js?time=1652965393960')
   </script>
 
 
@@ -3415,19 +3433,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1652676803907")
+        volantis.js("/js/plugins/sites.js?time=1652965393960")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1652676803907")
+        volantis.js("/js/plugins/friends.js?time=1652965393960")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1652676803907")
+        volantis.js("/js/plugins/contributors.js?time=1652965393960")
       }
     
   };
@@ -3499,7 +3517,7 @@ volantis.pjax.push(bindToggleButton);
     await volantis.js("https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('/js/aplayer.js?time=1652676803912')
+    await volantis.js('/js/aplayer.js?time=1652965393964')
     volantis.APlayerController.music = true;
   
   })();
@@ -3626,7 +3644,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1652676803907");
+    return volantis.js("/js/search/hexo.js?time=1652965393960");
   }
 
   function loadSearchService() {
@@ -3714,7 +3732,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -3757,7 +3775,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1652676803907').then(()=>{
+    volantis.js('/js/parallax.js?time=1652965393960').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{

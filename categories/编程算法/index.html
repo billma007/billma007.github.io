@@ -1875,7 +1875,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.7a2c825e.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.80d861b1.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.85946653.js"},"css":{"style":"/css/style.6e328348.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1702382985568),
+    lastupdate: new Date(1702383217943),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2670,78 +2670,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
-          
-        
-          
-        
-          
-        
       
     
     
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://billma.top/2021/08/26/cpp-constructor-exception/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Bill Ma's blog.">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Bill Ma's blog.">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/08/26/cpp-constructor-exception/"  itemprop="url">
-        C++ 中如何处理错误和异常？
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        1.前言用C++写代码的时候总是避免不了处理错误，一般来说有两种方式，通过函数的返回值或者抛出异常。C语言的错误处理一律是通过函数的返回值来判断的，一般是返回0、NULL或者-1表示错误，或者直接返回错误代码，具体是哪种方式没有统一的规定，各种API也各有各的偏好。譬如fopen函数，当成功时返回文件指针，失败时返回NULL，而POSIX标准的open函数则在成功时返回0或者正数，失败时返回...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-08-26T16:13:08+08:00">2021-08-26</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/">编程算法</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/" itemprop="url"><span itemprop="name">编程算法</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/08/26/cpp-constructor-exception/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
       
         
           <div class='post-wrapper'>
@@ -2795,139 +2726,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/2021/08/26/lcs-suffix-array/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://billma.top/2021/08/19/c-global-variables-in-multiple-files/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Bill Ma's blog.">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Bill Ma's blog.">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/08/19/c-global-variables-in-multiple-files/"  itemprop="url">
-        C语言中跨文件的全局变量
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        首先看一段代码
-func.c
-123456int buf = 0;void func() &#123;  buf = 2;  /*Do something else*/&#125;
-
-main.c
-1234567891011# include &lt;stdio.h&gt;int buf;void func();int main() &#123;  buf = 1;  func();  pr...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-08-19T16:07:04+08:00">2021-08-19</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/">编程算法</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/" itemprop="url"><span itemprop="name">编程算法</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/08/19/c-global-variables-in-multiple-files/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://billma.top/2021/08/12/a-b-problem/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Bill Ma's blog.">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Bill Ma's blog.">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/08/12/a-b-problem/"  itemprop="url">
-        不同的C++中求解A+B的方法
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        1.基础算法12345678910#include&lt;iostream&gt;using namespace std;int main()&#123; int a,b; cin&gt;&gt;a; cin&gt;&gt;b; cout&lt;&lt;a+b&lt;&lt;endl; return 0;&#125;
-
-1234567#include &lt;stdio.h&gt;int m...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-08-12T19:59:56+08:00">2021-08-12</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/">编程算法</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/" itemprop="url"><span itemprop="name">编程算法</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/08/12/a-b-problem/' itemprop="url">
             Read More
           </a>
         </div>
@@ -3242,12 +3040,12 @@ C++ 语言是个十分优秀的语言，但优秀并不表示完美。还是有�
           <li><a class="flat-box"
             title="/categories/%E5%8D%97%E8%88%AA%E8%8B%8F%E5%B7%9E%E9%99%84%E4%B8%AD%E6%A0%A1%E5%9B%AD%E6%B4%BB%E5%8A%A8/" href="/categories/%E5%8D%97%E8%88%AA%E8%8B%8F%E5%B7%9E%E9%99%84%E4%B8%AD%E6%A0%A1%E5%9B%AD%E6%B4%BB%E5%8A%A8/"
             active-action="action-categoriesE58D97E888AAE88B8FE5B79EE99984E4B8ADE6A0A1E59BADE6B4BBE58AA8"
-            ><div class='name'>南航苏州附中校园活动</div><div class='badge'>(2)</div></a></li>
+            ><div class='name'>南航苏州附中校园活动</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E6%97%A5%E5%B8%B8%E7%BB%8F%E9%AA%8C/" href="/categories/%E6%97%A5%E5%B8%B8%E7%BB%8F%E9%AA%8C/"
             active-action="action-categoriesE697A5E5B8B8E7BB8FE9AA8C"
-            ><div class='name'>日常经验</div><div class='badge'>(4)</div></a></li>
+            ><div class='name'>日常经验</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E7%AB%9E%E8%B5%9B%E8%A7%A3%E6%B3%95/" href="/categories/%E7%AB%9E%E8%B5%9B%E8%A7%A3%E6%B3%95/"
@@ -3257,17 +3055,17 @@ C++ 语言是个十分优秀的语言，但优秀并不表示完美。还是有�
           <li><a class="flat-box"
             title="/categories/%E7%B2%BE%E5%8D%8E%E8%BD%AC%E8%BD%BD/" href="/categories/%E7%B2%BE%E5%8D%8E%E8%BD%AC%E8%BD%BD/"
             active-action="action-categoriesE7B2BEE58D8EE8BDACE8BDBD"
-            ><div class='name'>精华转载</div><div class='badge'>(3)</div></a></li>
+            ><div class='name'>精华转载</div><div class='badge'>(2)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/" href="/categories/%E7%BC%96%E7%A8%8B%E7%AE%97%E6%B3%95/"
             active-action="action-categoriesE7BC96E7A88BE7AE97E6B395"
-            ><div class='name'>编程算法</div><div class='badge'>(7)</div></a></li>
+            ><div class='name'>编程算法</div><div class='badge'>(4)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E9%99%88%E6%98%9F%E5%AE%87%E7%89%9B%E9%80%BC/" href="/categories/%E9%99%88%E6%98%9F%E5%AE%87%E7%89%9B%E9%80%BC/"
             active-action="action-categoriesE99988E6989FE5AE87E7899BE980BC"
-            ><div class='name'>陈星宇牛逼</div><div class='badge'>(1)</div></a></li>
+            ><div class='name'>陈星宇牛逼</div><div class='badge'>(0)</div></a></li>
         
       </ul>
     </div>
@@ -3292,7 +3090,7 @@ C++ 语言是个十分优秀的语言，但优秀并不表示完美。还是有�
 
 
     <div class='content'>
-      <a href="/tags/computer-cpp/" style="font-size: 24px; color: #555">computer,cpp</a> <a href="/tags/github/" style="font-size: 14px; color: #999">github</a> <a href="/tags/python/" style="font-size: 14px; color: #999">python</a> <a href="/tags/teach%EF%BC%8Ccomputer%EF%BC%8Ccpp/" style="font-size: 14px; color: #999">teach，computer，cpp</a>
+      <a href="/tags/computer-cpp/" style="font-size: 14px; color: #999">computer,cpp</a> <a href="/tags/github/" style="font-size: 14px; color: #999">github</a> <a href="/tags/python/" style="font-size: 24px; color: #555">python</a> <a href="/tags/teach%EF%BC%8Ccomputer%EF%BC%8Ccpp/" style="font-size: 14px; color: #999">teach，computer，cpp</a>
     </div>
   </section>
 
@@ -4292,7 +4090,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   <script>
-  let imgs = ["https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/004.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/016.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/034.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/035.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/025.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/054.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/002.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/046.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/042.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/019.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/051.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/001.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/012.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/056.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/038.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/006.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/033.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/005.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/039.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/052.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/003.webp"];
+  let imgs = ["https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/042.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/006.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/054.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/046.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/001.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/003.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/038.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/005.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/035.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/004.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/056.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/016.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/002.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/034.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/052.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/039.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/051.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/033.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/025.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/012.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/019.webp"];
   let index = 0;
   let IntervalParallax = null;
 
